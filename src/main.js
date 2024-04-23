@@ -1,5 +1,4 @@
 import { navList } from './data/mega-menu.json';
-import VanillaCalendar from 'vanilla-calendar-pro';
 
 const headerBar = document.querySelector('#header-main nav');
 const megaMenu = document.getElementById('mega-menu');
@@ -17,9 +16,6 @@ const options = {
     calendar: 'calendar-wrapper',
   },
 };
-
-const calendar = new VanillaCalendar('#calendar', options);
-calendar.init();
 
 const createNavItem = (item) => {
   const navItem = document.createElement('a');
@@ -44,10 +40,13 @@ const createSideMenuItem = (subItem) => {
     'last:pb-0',
     'py-4',
   );
-  li.innerHTML = `
-    <a href="#" class="deneme">${subItem.title}</a>
-    <i class="fi fi-ts-angle-small-right pt-2"></i>
-  `;
+  const a = document.createElement('a');
+  a.href = '#';
+  a.textContent = subItem.title;
+  const i = document.createElement('i');
+  i.classList.add('fi', 'fi-ts-angle-small-right', 'pt-2');
+  li.appendChild(a);
+  li.appendChild(i);
   return li;
 };
 
