@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Vite App</title>
+</head>
+
+<body class="space-y-12">
+  <header class="relative bg-light">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container space-y-14">
+    <header class="flex justify-between items-center">
+      <div class="space-y-5">
+        <h1 class="text-3xl text-primary font-semibold"> Upcoming Events</h1>
+        <p class="text-primary">Take a look at the events we attend and organize. </p>
+      </div>
+      <div class="flex items-center gap-11 text-redish">
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="">Event Category</option>
+        </select><select name="country" id="country"
+          class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="">Event Type</option>
+        </select><select name="country" id="country"
+          class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="">Date</option>
+        </select>
+        <button class="px-5 py-2 border border-redish rounded-[.625rem]">
+          Filter
+        </button>
+      </div>
+    </header>
+    <section class="space-y-4">
+      <div id="calendar" class="calendar-wrapper"></div>
+    </section>
+  </main>
+  <script>
+
+
+
+
+
+    // her bir li elementi üzerine mouseover ve mouseleave event listener'larını ekleyerek mega menüyü açıp kapatabiliriz.
+    // kullanılmak istenirse aşağıdaki kodu kullanabiliriz.
+
+    // const waitForAnimationToEnd = (element, callback) => {
+    //   element.addEventListener('animationend', callback, { once: true });
+    // }
+
+    // const listItems = document.querySelectorAll('#header-main nav ul li a');
+    // listItems.forEach((item) => {
+    //   item.addEventListener('mouseover', () => {
+
+    //     const megaMenu = document.getElementById('mega-menu');
+
+    //     megaMenu.classList.add('animate-fade-in-down');
+    //     megaMenu.classList.remove('animate-fade-out-up', 'hidden');
+    //   });
+    //   item.addEventListener('mouseleave', () => {
+    //     const megaMenuId = item.dataset.megaMenu;
+    //     const megaMenu = document.getElementById('mega-menu');
+    //     megaMenu.classList.add('animate-fade-out-up');
+    //     megaMenu.classList.remove('animate-fade-in-down');
+    //     waitForAnimationToEnd(megaMenu, () => {
+    //       megaMenu.classList.add('hidden');
+    //     });
+    //   });
+    // });
+
+  </script>
+  <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>

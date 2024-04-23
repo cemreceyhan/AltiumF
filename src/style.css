@@ -1,0 +1,195 @@
+/* import if needed */
+@import '@flaticon/flaticon-uicons/css/regular/all';
+/* @import '@flaticon/flaticon-uicons/css/solid/all';
+@import '@flaticon/flaticon-uicons/css/brands/all';
+@import '@flaticon/flaticon-uicons/css/thin/rounded'; */
+@import '@flaticon/flaticon-uicons/css/thin/straight';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ########################################
+############# BASE STYLING ################
+######################################## */
+
+* {
+  font-family: 'Core Sans C', sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ########################################
+########## COMPONENTS STYLING #############
+######################################## */
+
+.active {
+  @apply text-secondary;
+}
+
+.megaMenu {
+  @apply absolute top-52 z-[9999] w-full divide-x divide-tertiary rounded-[18px] bg-menu-head px-[55px] py-[50px] opacity-0 shadow-[0_55px_30px_-28px_rgba(0,0,0,0.25)];
+}
+
+.deneme {
+  @apply text-5xl !important;
+}
+
+/* ########################################
+######### UTILITIES STYLING ###############
+######################################## */
+
+/* ########################################
+############# CUSTOM FONTS ################
+######################################## */
+
+@layer base {
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-15Thin.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-15ThinIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-25ExtraLight.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-25ExtraLightIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-35Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-35LightIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-45Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-45RegularIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-55Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-55MediumIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-65Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-65BoldIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-75ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-75ExtraBoldIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-85Heavy.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-85HeavyIt.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-95Black.ttf');
+  }
+
+  @font-face {
+    font-family: 'Core Sans C';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url('@assets/fonts/CoreSansC-95BlackIt.ttf');
+  }
+}

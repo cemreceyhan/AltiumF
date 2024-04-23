@@ -1,0 +1,4459 @@
+{
+  "navList": [
+    {
+      "id": 0,
+      "title": "Products",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Analytical Equipment Group",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Analytical Equipment Group",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Industries & Applications",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Industries & Applications",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Technologies",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Technologies",
+
+          "subMenu": [
+            {
+              "title": "Technologies",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Services",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Corporate",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Technical Support",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "R&D",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Events",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Contact",
+      "link": "#",
+      "sideMenuList": [
+        {
+          "id": 0,
+          "title": "Analytical Equipment Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Lab Solutions And Chemicals Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clinical and Life Sciences Group",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Jasem Clinic & Food Safety Kits",
+
+          "subMenu": [
+            {
+              "title": "Gas Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Gas Chromatography Systems",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Gas Chromatography Detectors",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Gas Chromatography Analyzer",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Gas Chromatography Technologies",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Sample Preparation",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Liquid Chromatography",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Industry 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Industry 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Industry 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Industry 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Industry 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Mass Spectrometer",
+              "list": [
+                {
+                  "id": 0,
+                  "title": "Technology 1",
+                  "link": "#"
+                },
+                {
+                  "id": 1,
+                  "title": "Technology 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Technology 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Technology 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Technology 5",
+                  "link": "#"
+                }
+              ]
+            },
+            {
+              "title": "Spectroscopy Systems",
+              "list": [
+                {
+                  "id": 1,
+                  "title": "Service 2",
+                  "link": "#"
+                },
+                {
+                  "id": 2,
+                  "title": "Service 3",
+                  "link": "#"
+                },
+                {
+                  "id": 3,
+                  "title": "Service 4",
+                  "link": "#"
+                },
+                {
+                  "id": 4,
+                  "title": "Service 5",
+                  "link": "#"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

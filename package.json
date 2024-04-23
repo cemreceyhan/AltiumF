@@ -1,0 +1,44 @@
+{
+  "name": "vite-tailwindcss-vanilla-js-starter",
+  "private": true,
+  "version": "0.0.4",
+  "description": "vite starter for html | tailwindcss | vanilla js project",
+  "author": "Denis Dezest <denis.dezest@gmail.com>",
+  "repository": "git@github.com:ddZ6ii/vite-tailwindcss-vanilla-js-starter.git",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --open",
+    "format": "prettier --write .",
+    "lint": "eslint --fix .",
+    "format:lint": "yarn run format && yarn run lint",
+    "build": "yarn run lint && vite build",
+    "preview": "vite preview --host --open",
+    "build:preview": "yarn run build && yarn run preview"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "globals": "^15.0.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.35",
+    "postcss-uncss": "^0.17.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.13",
+    "tailwindcss": "^3.4.1",
+    "uncss": "^0.17.3",
+    "url": "^0.11.3",
+    "vite": "^5.1.4",
+    "vite-plugin-minify": "^1.5.2"
+  },
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.2.1",
+    "vanilla-calendar-pro": "^2.9.6"
+  }
+}
