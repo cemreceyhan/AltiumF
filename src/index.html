@@ -11,11 +11,12 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <title>Vite App</title>
+  <script type="module" src="./main.js"></script>
+  <title>Altium</title>
 </head>
 
 <body class="space-y-12">
-  <header class="relative bg-light">
+  <header class="relative bg-light-100">
     <div class="space-y-4 container min-h-56">
       <nav id="header-bar"
         class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
@@ -88,7 +89,7 @@
         </div>
       </div>
   </header>
-  <main class="container space-y-14">
+  <main class="container space-y-14 pb-6">
     <header class="flex justify-between items-center">
       <div class="space-y-5">
         <h1 class="text-3xl text-primary font-semibold"> Upcoming Events</h1>
@@ -109,45 +110,144 @@
         </button>
       </div>
     </header>
-    <section class="space-y-4">
+    <section class="flex justify-between gap-6">
+      <div id="calendar"></div>
+      <div class="flex flex-col gap-5 w-full">
+        <div
+          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
+            <div class="flex items-center gap-2">
+              <span class="active-event"></span>
+              <span>Ongoing Event</span>
+            </div>
+            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
+              Congress
+            </button>
+          </div>
+          <div class="col-span-6 flex justify-center">
+            <div class="flex flex-col w-[90%] gap-3">
+              <span class="text-event-blue text-xs">Chromatography</span>
+              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
+                Agilent
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span>Online / 8 Feb 2024</span>
+            <span>Kayseri, Turkey</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
+            <!-- <div class="flex items-center gap-2">
+              <i class="fi fi-rr-calendar w-4 h-4"></i>
+              <span>Ongoing Event</span>
+            </div> -->
+            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
+              Congress
+            </button>
+          </div>
+          <div class="col-span-6 flex justify-center">
+            <div class="flex flex-col w-[90%] gap-3">
+              <span class="text-event-blue text-xs">Chromatography</span>
+              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
+                Agilent
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span>Online / 8 Feb 2024</span>
+            <span>Kayseri, Turkey</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
+            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
+              Trade Show
+            </button>
+          </div>
+          <div class="col-span-6 flex justify-center">
+            <div class="flex flex-col w-[90%] gap-3">
+              <span class="text-event-green text-xs">Spectrometer</span>
+              <h2 class="text-2xl font-semibold text-primary">Bioexpo Trade Show</h2>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span>Online / 8 Feb 2024</span>
+            <span>Kayseri, Turkey</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
-  <script>
-
-
-
-
-
-    // her bir li elementi üzerine mouseover ve mouseleave event listener'larını ekleyerek mega menüyü açıp kapatabiliriz.
-    // kullanılmak istenirse aşağıdaki kodu kullanabiliriz.
-
-    // const waitForAnimationToEnd = (element, callback) => {
-    //   element.addEventListener('animationend', callback, { once: true });
-    // }
-
-    // const listItems = document.querySelectorAll('#header-main nav ul li a');
-    // listItems.forEach((item) => {
-    //   item.addEventListener('mouseover', () => {
-
-    //     const megaMenu = document.getElementById('mega-menu');
-
-    //     megaMenu.classList.add('animate-fade-in-down');
-    //     megaMenu.classList.remove('animate-fade-out-up', 'hidden');
-    //   });
-    //   item.addEventListener('mouseleave', () => {
-    //     const megaMenuId = item.dataset.megaMenu;
-    //     const megaMenu = document.getElementById('mega-menu');
-    //     megaMenu.classList.add('animate-fade-out-up');
-    //     megaMenu.classList.remove('animate-fade-in-down');
-    //     waitForAnimationToEnd(megaMenu, () => {
-    //       megaMenu.classList.add('hidden');
-    //     });
-    //   });
-    // });
-
-  </script>
-  <script type="module" src="./main.js"></script>
-
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+    <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+  </footer>
 </body>
 
 </html>

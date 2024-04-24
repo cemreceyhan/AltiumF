@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import postcssImport from 'postcss-import';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 const opsys = process.platform;
@@ -25,8 +28,12 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  css: {
+    postcss: {
+      plugins: [postcssImport, tailwindcss, autoprefixer],
+    },
+  },
   plugins: [
-    // HTML minification
     ViteMinifyPlugin({
       removeComments: true,
     }),

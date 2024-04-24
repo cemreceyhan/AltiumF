@@ -18,8 +18,10 @@ export default {
         secondary: '#D1050C',
         tertiary: '#C5C6C6',
         redish: '#D71920',
-        light: '#F9F9F9',
-        'menu-head': '#F3F3F3',
+        'light-100': '#F9F9F9',
+        'light-200': '#F3F3F3',
+        'event-blue': '#262E85',
+        'event-green': '#1E9C4A',
       },
       animation: {
         'fade-in-down': 'fade-in-down 0.5s ease-out forwards',

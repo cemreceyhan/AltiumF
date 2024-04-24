@@ -1,4 +1,5 @@
 import { navList } from './data/mega-menu.json';
+import VanillaCalendar from 'vanilla-calendar-pro';
 
 const headerBar = document.querySelector('#header-main nav');
 const megaMenu = document.getElementById('mega-menu');
@@ -6,16 +7,42 @@ const megaMenuSub = document.getElementById('mega-sub');
 const megaMenuSide = document.getElementById('mega-side');
 
 const currentRoute = window.location.pathname.split('/').pop();
-const options = {
-  settings: {
-    visibility: {
-      theme: 'light',
+
+// CALENDAR SECTION START
+
+const staticSpecifiedDates = ['2024-04-15', '2024-04-13', '2024-04-19'];
+
+const calendarHandler = ({ eventDates }) => {
+  const options = {
+    settings: {
+      visibility: {
+        theme: 'light',
+      },
+      selection: {
+        day: false,
+      },
+      selected: {
+        dates: eventDates,
+        month: 3,
+        year: 2024,
+      },
     },
-  },
-  CSSClasses: {
-    calendar: 'calendar-wrapper',
-  },
+    CSSClasses: {
+      calendar: 'calendar-container',
+    },
+  };
+
+  const calendar = new VanillaCalendar('#calendar', options);
+  calendar.init();
 };
+
+calendarHandler({
+  eventDates: staticSpecifiedDates,
+});
+
+// CALENDAR SECTION END
+
+// MEGA MENU SECTION START
 
 const createNavItem = (item) => {
   const navItem = document.createElement('a');
@@ -40,13 +67,10 @@ const createSideMenuItem = (subItem) => {
     'last:pb-0',
     'py-4',
   );
-  const a = document.createElement('a');
-  a.href = '#';
-  a.textContent = subItem.title;
-  const i = document.createElement('i');
-  i.classList.add('fi', 'fi-ts-angle-small-right', 'pt-2');
-  li.appendChild(a);
-  li.appendChild(i);
+  li.innerHTML = `
+    <a href="#" class="deneme">${subItem.title}</a>
+    <i class="fi fi-ts-angle-small-right pt-2"></i>
+  `;
   return li;
 };
 
@@ -106,3 +130,5 @@ navList.forEach((item) => {
     });
   });
 });
+
+// MEGA MENU SECTION END

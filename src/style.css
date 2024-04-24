@@ -1,8 +1,8 @@
 /* import if needed */
 @import '@flaticon/flaticon-uicons/css/regular/all';
 /* @import '@flaticon/flaticon-uicons/css/solid/all';
-@import '@flaticon/flaticon-uicons/css/brands/all';
 @import '@flaticon/flaticon-uicons/css/thin/rounded'; */
+@import '@flaticon/flaticon-uicons/css/brands/all';
 @import '@flaticon/flaticon-uicons/css/thin/straight';
 
 @tailwind base;
@@ -32,8 +32,27 @@ ul {
   @apply text-secondary;
 }
 
+.active-event {
+  @apply h-4 w-4 animate-pulse rounded-full bg-secondary;
+}
+
 .megaMenu {
-  @apply container absolute top-52 z-[9999] w-full divide-x divide-tertiary rounded-[18px] bg-menu-head px-[55px] py-[50px] opacity-0 shadow-[0_55px_30px_-28px_rgba(0,0,0,0.25)];
+  @apply bg-light-200 container absolute top-52 z-[9999] w-full divide-x divide-tertiary rounded-[18px] px-[55px] py-[50px] opacity-0 shadow-[0_55px_30px_-28px_rgba(0,0,0,0.25)];
+}
+
+.calendar-container {
+  @apply hidden h-[430px] w-full max-w-[524px] self-start rounded-[10px] border border-tertiary xl:block;
+}
+
+.vanilla-calendar-wrapper {
+  @apply h-[calc(100%-5rem)];
+}
+.vanilla-calendar-day {
+  @apply h-full;
+}
+
+.vanilla-calendar-header {
+  @apply p-4;
 }
 
 /* ########################################
