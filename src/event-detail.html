@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Altium</title>
+</head>
+
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container pb-6">
+    <section class="grid grid-cols-9 gap-6 items-start text-primary">
+      <div class="col-span-7 space-y-6">
+        <!-- EVENT DETAILS AREA -->
+        <article class="border-tertiary/30 border rounded-[18px] p-10 relative overflow-hidden">
+          <div class="absolute right-0 scale-125">
+            <img class="-mb-20 -ml-8" src="images/detail2.png" />
+            <img class="" src="images/detail1.png" />
+          </div>
+          <div class="max-w-3xl space-y-8 relative">
+            <h1 class="text-[32px]/[130%] font-extrabold ">HPLC Method Development: From Beginner to
+              Expert, Part 1
+              - Agilent
+            </h1>
+            <p>Nunc adipiscing ac eu velit. Ut sagittis purus vel quisque. Suspendisse molestie pretium ullamcorper
+              nulla
+              eget dolor mattis vitae a. Velit proin sagittis nunc pretium enim convallis proin neque ut. Auctor
+              adipiscing in mauris nec.
+            </p>
+            <div class="w-full h-[1px] bg-tertiary"></div>
+            <div class="space-y-2">
+              <h3 class="text-base/[130%] font-extrabold">Contact Information</h3>
+              <p>Event Organizer:</p>
+              <p>Cemre Ceyhan</p>
+              <p>Phone: +90 536 875 84 66</p>
+              <p>Email: cemrecyhn@gmail.com</p>
+            </div>
+          </div>
+        </article>
+        <div class="grid grid-cols-6 gap-6">
+          <!-- SPEAKER AREA -->
+          <div class="col-span-2 space-y-6">
+            <h3 class="font-extrabold">Speakers</h3>
+            <div class="border border-tertiary rounded-[10px] p-5 flex items-center gap-5">
+              <img src="images/ablamiz.jpeg" alt="Altium" class="h-[100px] w-[100px] object-cover rounded-[10px]" />
+              <div class="space-y-1">
+                <p class="font-extrabold">Alice Ratke</p>
+                <p class="font-normal">alice.ratke@altium.net</p>
+              </div>
+            </div>
+            <div class="border border-tertiary rounded-[10px] p-5 flex items-center gap-5">
+              <img src="images/ablamiz.jpeg" alt="Altium" class="h-[100px] w-[100px] object-cover rounded-[10px]" />
+              <div class="space-y-1">
+                <p class="font-extrabold">Alice Ratke</p>
+                <p class="font-normal">alice.ratke@altium.net</p>
+              </div>
+            </div>
+            <div class="border border-tertiary rounded-[10px] p-5 flex items-center gap-5">
+              <img src="images/ablamiz.jpeg" alt="Altium" class="h-[100px] w-[100px] object-cover rounded-[10px]" />
+              <div class="space-y-1">
+                <p class="font-extrabold">Alice Ratke</p>
+                <p class="font-normal">alice.ratke@altium.net</p>
+              </div>
+            </div>
+          </div>
+          <!-- REGISTRATION AREA -->
+          <div class="col-span-4 space-y-6">
+            <h3 class="font-extrabold">Event Registration Form</h3>
+            <div class="border border-tertiary rounded-[10px] p-7">
+              <form action="#" method="POST" class="space-y-4">
+                <div class="grid grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label for="name" class="font-semibold">Your Name</label>
+                    <input type="text" id="name" name="name"
+                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                  </div>
+                  <div class="space-y-2">
+                    <label for="title" class="font-semibold">Title</label>
+                    <input type="text" id="title" name="title"
+                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label for="email" class="font-semibold">Phone</label>
+                    <input type="email" id="email" name="email"
+                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                  </div>
+                  <div class="space-y-2">
+                    <label for="phone" class="font-semibold">Email</label>
+                    <input type="tel" id="phone" name="phone"
+                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label for="address" class="font-semibold">Address</label>
+                  <textarea id="address" rows="1" name="address"
+                    class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required></textarea>
+                </div>
+                <div class="flex items-center gap-14">
+                  <div class="flex items center gap-4">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    <label for="terms">I accept the terms and conditions</label>
+                  </div>
+                  <div class="flex items center gap-4">
+                    <input type="checkbox" id="nameHere" name="nameHere" required />
+                    <label for="nameHere">In hendrerit viverra tempor</label>
+                  </div>
+                </div>
+                <button
+                  class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- GOOGLE MAP AREA -->
+          <div class="col-span-6 rounded-[18px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0000000000005!2d35.48200000000001!3d38.73100000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3b8b4b4b4b4b4%3A0x14d3b8b4b4b4b4b4!2sHali%C3%A7%20Kongre%20Merkezi!5e0!3m2!1str!2str!4v1633666820004!5m2!1str!2str"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- EVENT INFORMATIONS -->
+      <aside class="col-span-2 space-y-3">
+        <div class="border-tertiary border rounded-[18px] p-8 space-y-4">
+          <h3 class="text-base/[130%] font-extrabold">Event Informations Form</h3>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-tr-calendar-days pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Date</span>
+              <span class="text-[14px]/[130%] font-normal">12.05.2024</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-ts-duration-alt pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Duration</span>
+              <span class="text-[14px]/[130%] font-normal">2 - 5 Hour</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-rr-clock-three pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Time</span>
+              <span class="text-[14px]/[130%] font-normal">12:00 - 14:00</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-tr-earth-asia pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Location</span>
+              <span class="text-[14px]/[130%] font-normal">Kayseri, Turkey</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-rr-marker pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Event Location</span>
+              <span class="text-[14px]/[130%] font-normal">Haliç Kongre Merkezi</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-rr-apps pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Event Type</span>
+              <span class="text-[14px]/[130%] font-normal">Webinar</span>
+            </div>
+          </div>
+          <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
+            <i class="fi fi-rr-layout-fluid pr-10 shrink-0 w-5 h-5"></i>
+            <div class="flex flex-col pl-5">
+              <span class="text-[14px]/[130%] font-extrabold">Category</span>
+              <span class="text-[14px]/[130%] font-normal">Chromatography</span>
+            </div>
+          </div>
+        </div>
+        <!-- SHARE SOCIAL -->
+        <div class="flex flex-col gap-4 px-8 py-6 bg-light-200 rounded-[18px]">
+          <h3 class="text-base/[130%] font-extrabold">Share Event</h3>
+          <div class="flex gap-12">
+            <a href="#">
+              <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-twitter-alt"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+</body>
+
+</html>

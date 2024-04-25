@@ -1,7 +1,7 @@
 /* import if needed */
 @import '@flaticon/flaticon-uicons/css/regular/all';
-/* @import '@flaticon/flaticon-uicons/css/solid/all';
-@import '@flaticon/flaticon-uicons/css/thin/rounded'; */
+/* @import '@flaticon/flaticon-uicons/css/solid/all';*/
+@import '@flaticon/flaticon-uicons/css/thin/rounded';
 @import '@flaticon/flaticon-uicons/css/brands/all';
 @import '@flaticon/flaticon-uicons/css/thin/straight';
 
@@ -37,7 +37,7 @@ ul {
 }
 
 .megaMenu {
-  @apply bg-light-200 container absolute top-52 z-[9999] w-full divide-x divide-tertiary rounded-[18px] px-[55px] py-[50px] opacity-0 shadow-[0_55px_30px_-28px_rgba(0,0,0,0.25)];
+  @apply container absolute top-52 z-[9999] w-full divide-x divide-tertiary rounded-[18px] bg-light-200 px-[55px] py-[50px] opacity-0 shadow-[0_55px_30px_-28px_rgba(0,0,0,0.25)];
 }
 
 .calendar-container {
