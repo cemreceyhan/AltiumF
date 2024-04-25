@@ -6,6 +6,7 @@ const megaMenuSub = document.getElementById('mega-sub');
 const megaMenuSide = document.getElementById('mega-side');
 
 const currentRoute = window.location.pathname.split('/').pop();
+console.log(currentRoute);
 
 const createNavItem = (item) => {
   const navItem = document.createElement('a');
