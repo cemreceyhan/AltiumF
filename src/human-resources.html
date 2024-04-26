@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Altium</title>
+</head>
+
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container pb-6">
+    <section class="grid grid-cols-12 gap-6 items-stretch text-primary mb-8">
+      <!-- ROW 1 END -->
+      <div class="col-span-6 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Human Resources</h1>
+        <p>At Altium, we are committed to creating a work environment that promotes growth, learning, and collaboration.
+          Our core values of <span class="text-redish">Trust, Respect, Develop and Share</span> guide our daily actions
+          and decisions. As a team, we
+          believe that our greatest asset is our people. Therefore, our HR policy is designed to attract, develop, and
+          retain the best talent in the industry.</p>
+      </div>
+      <img src="images/human-resources/1.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-6 rounded-[18px]" />
+      <!-- ROW 1 END -->
+
+      <!-- ROW 2 START -->
+      <img src="images/human-resources/2.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-6 rounded-[18px]" />
+      <div class="col-span-3 flex flex-col justify-center bg-redish-100 px-14 space-y-5 rounded-[18px] text-white">
+        <h1 class="text-[32px]/[130%] font-semibold">Human Resources</h1>
+        <p>Mattis odio in mattis ut praesent ultricies arcu nunc. Sit malesuada imperdiet ultrices egestas morbi erat
+          cras condimentum. Tincidunt dignissim urna habitant laoreet scelerisque imperdiet. </p>
+      </div>
+      <img src="images/human-resources/3.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-3 rounded-[18px]" />
+      <!-- ROW 2 END -->
+
+      <!-- ROW 3 START -->
+      <div class="col-span-3 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Our People & Careers</h1>
+        <p>Mattis odio in mattis ut praesent ultricies arcu nunc. Sit malesuada imperdiet ultrices egestas morbi erat
+          cras condimentum. Tincidunt dignissim urna habitant laoreet scelerisque imperdiet.</p>
+        <button
+          class="pb-1 self-start text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+          More</button>
+      </div>
+      <img src="images/human-resources/4.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] object-left w-full col-span-3 rounded-[18px]" />
+      <img src="images/human-resources/5.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] object-top w-full col-span-6 rounded-[18px]" />
+      <!-- ROW 3 END -->
+
+      <div class="col-span-12 flex flex-col items-center justify-center gap-11 my-4">
+        <header class="text-center space-y-4">
+          <h2 class="text-[32px]/[130%] font-semibold">Our Open Positions</h2>
+          <p class="text-redish">Here are our open positions in the countries Altium operates</p>
+        </header>
+        <!-- OPEN POSITIONS START -->
+        <div
+          class="pl-8 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="col-span-5 flex justify-center text-primary">
+            <div class="flex flex-col w-[90%] gap-3">
+              <h2 class="font-semibold">Marketing Specialist
+              </h2>
+              <p class="text-sm">Mattis odio in mattis ut praesent ultricies
+                nunc. Sit malesuada imperdiet ultrices.</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Location</span>
+            <span class="flex items-center gap-3"><i class="fi fi-rr-marker text-lg pt-1"></i>Kayseri, Turkey</span>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Working Method</span>
+            <span class="flex items-center gap-3"><i class="fi fi-tr-calendar-days text-lg pt-1"></i>Full Time</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%] text-redish">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-8 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="col-span-5 flex justify-center text-primary">
+            <div class="flex flex-col w-[90%] gap-3">
+              <h2 class="font-semibold">Marketing Specialist
+              </h2>
+              <p class="text-sm">Mattis odio in mattis ut praesent ultricies
+                nunc. Sit malesuada imperdiet ultrices.</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Location</span>
+            <span class="flex items-center gap-3"><i class="fi fi-rr-marker text-lg pt-1"></i>Kayseri, Turkey</span>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Working Method</span>
+            <span class="flex items-center gap-3"><i class="fi fi-tr-calendar-days text-lg pt-1"></i>Full Time</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%] text-redish">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-8 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="col-span-5 flex justify-center text-primary">
+            <div class="flex flex-col w-[90%] gap-3">
+              <h2 class="font-semibold">Marketing Specialist
+              </h2>
+              <p class="text-sm">Mattis odio in mattis ut praesent ultricies
+                nunc. Sit malesuada imperdiet ultrices.</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Location</span>
+            <span class="flex items-center gap-3"><i class="fi fi-rr-marker text-lg pt-1"></i>Kayseri, Turkey</span>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Working Method</span>
+            <span class="flex items-center gap-3"><i class="fi fi-tr-calendar-days text-lg pt-1"></i>Full Time</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%] text-redish">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-8 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="col-span-5 flex justify-center text-primary">
+            <div class="flex flex-col w-[90%] gap-3">
+              <h2 class="font-semibold">Marketing Specialist
+              </h2>
+              <p class="text-sm">Mattis odio in mattis ut praesent ultricies
+                nunc. Sit malesuada imperdiet ultrices.</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Location</span>
+            <span class="flex items-center gap-3"><i class="fi fi-rr-marker text-lg pt-1"></i>Kayseri, Turkey</span>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Working Method</span>
+            <span class="flex items-center gap-3"><i class="fi fi-tr-calendar-days text-lg pt-1"></i>Full Time</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%] text-redish">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <div
+          class="pl-8 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
+          <div class="col-span-5 flex justify-center text-primary">
+            <div class="flex flex-col w-[90%] gap-3">
+              <h2 class="font-semibold">Marketing Specialist
+              </h2>
+              <p class="text-sm">Mattis odio in mattis ut praesent ultricies
+                nunc. Sit malesuada imperdiet ultrices.</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Location</span>
+            <span class="flex items-center gap-3"><i class="fi fi-rr-marker text-lg pt-1"></i>Kayseri, Turkey</span>
+          </div>
+          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
+            <span class="font-semibold">Working Method</span>
+            <span class="flex items-center gap-3"><i class="fi fi-tr-calendar-days text-lg pt-1"></i>Full Time</span>
+          </div>
+          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%] text-redish">
+            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
+          </a>
+        </div>
+        <!-- OPEN POSITIONS END -->
+      </div>
+
+      <!-- ROW 4 START -->
+      <div class="col-span-5 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Recruitment</h1>
+        <p>We welcome candidates from all backgrounds who share our values and are committed to making a positive impact
+          in the industry. We focus on candidates who have demonstrated a strong work ethic, a passion for learning and
+          growth, and a commitment to our values.
+        </p>
+      </div>
+      <img src="images/human-resources/6.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-7 object-top rounded-[18px]" />
+      <!-- ROW 4 END -->
+
+      <!-- ROW 5 START -->
+      <img src="images/human-resources/7.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-7 object-center rounded-[18px]" />
+      <div class="col-span-5 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Training and Development</h1>
+        <p>We believe in providing our employees with the tools and resources they need to succeed. Our training and
+          development programs are designed to help our employees grow both professionally and personally. We encourage
+          our employees to take an active role in their learning and development by providing opportunities for them to
+          attend industry conferences, participate in online courses, and work on challenging projects.
+        </p>
+      </div>
+      <!-- ROW 5 END -->
+
+      <!-- ROW 6 START -->
+      <div class="col-span-5 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Performance Management</h1>
+        <p>We believe that feedback is critical to the growth and development of our employees. Our performance
+          management process is designed to provide regular feedback and coaching to our employees. We set clear
+          performance expectations and provide our employees with the support they need to achieve their goals. Our
+          performance management process is based on open and honest communication, and we encourage our employees to
+          share their feedback and ideas for improvement.
+        </p>
+      </div>
+      <img src="images/human-resources/8.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-7 object-center rounded-[18px]" />
+      <!-- ROW 6 END -->
+
+      <!-- ROW 7 START -->
+      <img src="images/human-resources/9.jpeg" alt="Human Resources"
+        class="object-cover max-h-[387px] w-full col-span-7 object-top rounded-[18px]" />
+      <div class="col-span-5 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Diversity and Inclusion</h1>
+        <p>At Altium, we are committed to creating a diverse and inclusive work environment where everyone feels valued
+          and respected. We believe that diversity is essential to our success, and we are committed to promoting
+          diversity in all aspects of our business. We do not discriminate on the basis of race, gender, religion, age,
+          or any other characteristic protected by law.
+        </p>
+      </div>
+      <!-- ROW 7 END -->
+      <!-- ROW 7 START -->
+      <div class="col-span-6 min-h-80 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Compensation and Benefits</h1>
+        <p>We believe in providing our employees with competitive compensation and benefits packages that reflect their
+          contributions to our business. We offer a range of benefits, including healthcare, retirement savings plans,
+          and paid time off. We regularly review our compensation and benefits packages to ensure that they are
+          competitive and meet the needs of our employees.
+        </p>
+      </div>
+      <div class="col-span-6 min-h-80 flex flex-col justify-center bg-light-200 px-14 space-y-5 rounded-[18px]">
+        <h1 class="text-[32px]/[130%] font-semibold">Conclusion</h1>
+        <p>At Altium, we are committed to creating a work environment where our employees can grow, learn, and thrive.
+          Our HR policy is designed to support our employees’ growth and development, promote diversity and inclusion,
+          and provide competitive compensation and benefits. We believe that by investing in our people, we can continue
+          to be a leader in the industry and make a positive impact in the world.
+        </p>
+      </div>
+      <!-- ROW 7 END -->
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+</body>
+
+</html>

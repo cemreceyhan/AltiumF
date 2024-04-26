@@ -18,6 +18,7 @@ export default {
         secondary: '#D1050C',
         tertiary: '#C5C6C6',
         redish: '#D71920',
+        'redish-100': '#D71920',
         'light-100': '#F9F9F9',
         'light-200': '#F3F3F3',
         'event-blue': '#262E85',
