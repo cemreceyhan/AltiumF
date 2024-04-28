@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Altium</title>
+</head>
+
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container pb-6">
+    <section class="grid grid-cols-12 gap-6 items-start text-primary">
+      <div class="col-span-9 space-y-11">
+        <header class="space-y-5 max-w-5xl">
+          <p class="text-[12px]">Blog / Pellentesque blandit sit volutpat faucibus</p>
+          <h1>HPLC Method Development: From Beginner to
+            Expert, Part 1
+            - Agilent
+          </h1>
+          <p>Chromatography / Wednesday / 13th December 20235 minutes to read
+          </p>
+        </header>
+        <!-- EVENT INFORMATIONS -->
+        <article class="space-y-11">
+          <img class="rounded-[18px] object-cover h-[680px] w-full" src="images/blog/lab.jpeg" alt="Event" />
+          <p>Rhoncus imperdiet risus consectetur urna tellus nulla non condimentum gravida. Molestie ut augue aenean
+            blandit proin. Purus eget at vitae gravida proin augue. Ac netus a nunc mattis id in pharetra. Laoreet
+            tristique varius sed venenatis condimentum. Tortor varius id duis convallis. Viverra congue et id sit eget
+            sit fringilla hac nec. Non est morbi ac lacus nisl convallis elit. Volutpat euismod mattis pretium pulvinar
+            lectus semper tristique dignissim. Est auctor tristique sapien at quis auctor ultrices scelerisque quam.
+            Velit amet nullam duis id donec. Integer volutpat nam suspendisse duis tempus commodo arcu turpis cursus. Mi
+            aenean vestibulum vulputate sit id. Viverra porttitor purus lectus nulla sodales quam imperdiet diam. Ac
+            vestibulum tincidunt phasellus rhoncus nunc nulla fusce et sit.
+          </p>
+          <h2>
+            At nibh ut urna ante faucibus. Interdum orci scelerisque.
+          </h2>
+          <div class="flex gap-4">
+            <img class="rounded-[18px] object-cover h-[387px] w-[387px]" src="images/blog/lab.jpeg" alt="Event" />
+            <div class="space-y-11">
+              <h4 class="w-2/3 font-extrabold">
+                Bibendum massa purus dui urna rhoncus amet vitae nisl. Eget purus
+                ultricies integer
+                odio faucibus
+                adipiscing est. Sed ultrices.
+              </h4>
+              <p>
+                Molestie eget malesuada risus tristique nunc. Ut non scelerisque sit mi urna. Mattis volutpat ac
+                praesent tristique massa non. Euismod odio gravida eget feugiat aliquet. Posuere proin consectetur non
+                erat
+                turpis.
+              </p>
+              <p>
+                Elementum eleifend nunc ornare faucibus mauris velit. Sit scelerisque mi eget fusce pellentesque
+                ultricies tortor eget nullam. Pellentesque dis aenean ac tellus adipiscing pretium congue parturient.
+                Aliquam facilisi nibh id sapien duis vitae fringilla. Erat et in aliquet nibh nisl gravida eget purus
+                adipiscing. A viverra sollicitudin consequat mollis elementum mus id magna. Amet pulvinar maecenas
+                auctor quam pellentesque. Est malesuada enim et risus est. Duis viverra at metus suspendisse pharetra
+                sit enim.
+              </p>
+            </div>
+          </div>
+          <ul class="space-y-6 list-disc pl-6">
+            <li>
+              Donec aliquam a at neque imperdiet pretium sed urna. Egestas viverra maecenas augue at nulla laoreet
+              fermentum. Sagittis mauris dignissim sed non in egestas.
+            </li>
+            <li>
+              Tortor tellus a elementum eget ipsum quis lacus. Platea in cras nec volutpat nec id. Fringilla amet nunc
+              adipiscing vulputate consequat egestas et commodo lacus.
+            </li>
+            <li>
+              Mi odio sit ut semper eros nam dictum sagittis. Sed in dictum pellentesque vel imperdiet elit cursus
+              faucibus. Elementum arcu augue duis cras at. Commodo eros
+            </li>
+            <li>
+              Et scelerisque senectus dui amet eu semper. Nunc volutpat lacus leo at pretium egestas sit interdum. A
+              felis libero id condimentum magna. Sed.
+            </li>
+          </ul>
+          <div class="grid grid-cols-2 gap-7">
+            <img class="rounded-[18px] object-cover col-span-1" src="images/blog/lab-people.jpeg" alt="Event" />
+            <img class="rounded-[18px] object-cover col-span-1" src="images/blog/worker.jpeg" alt="Event" />
+          </div>
+          <p>
+            Vel massa elit volutpat et accumsan consectetur. Nulla neque donec varius adipiscing volutpat. Viverra
+            semper velit purus integer cursus fringilla duis a id. Cras volutpat imperdiet lectus ultrices. Iaculis
+            neque sagittis at ac tincidunt integer viverra nibh.Egestas non nec quis dui euismod ultrices tortor elit
+            bibendum. Quam bibendum quisque ultrices dui aliquam maecenas et volutpat. Feugiat id semper dignissim
+            iaculis sit et. Nunc tellus id pulvinar risus massa risus. Congue aenean nec nec venenatis. Ultrices
+            porttitor fusce enim sit sit. Ut mattis auctor at tempor massa. Metus massa scelerisque diam sed elit
+            adipiscing viverra nisl ornare. Ut habitasse libero vel nibh malesuada nisi nulla cras. Elit nulla at sit
+            pharetra turpis vestibulum suspendisse. Aliquet amet sed amet ultrices. Tristique eu tempus lorem augue vel
+            vel gravida. Netus commodo in nam aliquam id pellentesque sem iaculis eget. Eu a nunc posuere dignissim
+            cursus pellentesque malesuada quis.Blandit elit mi pharetra suspendisse. Neque euismod pretium consequat
+            blandit id volutpat. Lacus sociis id pulvinar mattis vitae facilisis nunc vitae. Pellentesque quis diam amet
+            justo etiam. Nulla sollicitudin et augue sed. Faucibus consequat ut eget etiam cum lorem mus. Egestas cursus
+            consectetur eget turpis viverra id. Ipsum aliquet ut praesent ultricies facilisis. Morbi maecenas pharetra
+            at eget adipiscing. At integer ornare purus vulputate ultricies ipsum risus ornare. Mattis et facilisis eget
+            neque sed eu. Fringilla leo mattis vulputate accumsan imperdiet phasellus elementum congue. Aliquam vitae
+            augue sem mauris in. Hendrerit sit maecenas mi suspendisse quisque turpis velit viverra.
+          </p>
+          <p>
+            Sed mollis egestas diam id. A fermentum viverra malesuada nulla tincidunt. Facilisi mattis volutpat sed
+            senectus mi mauris quam sit in. Turpis blandit sit elit tincidunt nulla leo. Volutpat sodales diam volutpat
+            et cras sit quis.Elit ipsum feugiat sed cras at. Sed nullam molestie eu a sed arcu odio sit eu. Pellentesque
+            ultricies turpis lorem porta tortor maecenas et. Risus ut nulla enim ac scelerisque aenean tristique amet
+            nulla. Ac nisl aenean suscipit tempor turpis in dui neque. Ut bibendum vitae suspendisse volutpat
+            ullamcorper ac ut donec. A dolor sagittis quam ut eget ac varius tellus. Elementum eros ut aliquam ultrices
+            vitae sed elit a velit. Fermentum ac eget ullamcorper nam odio imperdiet eget duis in. Lobortis sodales
+            morbi id arcu fringilla nec sem tellus. Sit massa dignissim lacus blandit lorem non mauris ac feugiat.
+            Sollicitudin nulla fusce ultrices viverra volutpat.Sit urna arcu sed egestas nulla. Ultrices lorem vitae
+            erat sit urna leo eget diam. Proin nunc amet cursus sollicitudin. Ut vitae lacus eu nisl mi vestibulum
+          </p>
+        </article>
+        <!-- RELATED POSTS -->
+        <section class="space-y-11">
+          <h2 class="font-extrabold">Related Posts</h2>
+          <div class="grid grid-cols-3 gap-6">
+            <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+              <img src="images/blog/1.jpeg" alt="blog/1" class="object-cover h-1/2 w-full" />
+              <div class="px-[38px] py-[43px] space-y-8">
+                <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+                </h3>
+                <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+                <div class="flex items-center justify-between">
+                  <button
+                    class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                    More</button>
+                  <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+              <img src="images/blog/2.jpeg" alt="blog/2" class="object-cover h-1/2 w-full" />
+              <div class="px-[38px] py-[43px] space-y-8">
+                <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+                </h3>
+                <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+                <div class="flex items-center justify-between">
+                  <button
+                    class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                    More</button>
+                  <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+              <img src="images/blog/3.jpeg" alt="blog/3" class="object-cover h-1/2 w-full" />
+              <div class="px-[38px] py-[43px] space-y-8">
+                <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+                </h3>
+                <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+                <div class="flex items-center justify-between">
+                  <button
+                    class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                    More</button>
+                  <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                </div>
+              </div>
+            </article>
+          </div>
+      </div>
+      <aside class="col-span-3 space-y-3">
+        <div class="border-tertiary border rounded-[18px] p-8">
+          <h3 class="text-base/[130%] font-extrabold">Latest Posts</h3>
+          <div class="divide-y divide-tertiary">
+            <div class="flex items-center gap-5 py-5">
+              <img src="images/blog/3.jpeg" alt="blog/3"
+                class="object-cover h-[75px] w-[75px] shrink-0 rounded-[10px]" />
+              <div class="flex flex-col text-[14px]/[175%]">
+                <span class="font-extrabold">
+                  Venenatis diam dolor</span>
+                <span>
+                  Nullam senectus risus leo vel mi. Rutrum integer lorem
+                  pulvinar.</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-5 py-5">
+              <img src="images/blog/3.jpeg" alt="blog/3"
+                class="object-cover h-[75px] w-[75px] shrink-0 rounded-[10px]" />
+              <div class="flex flex-col text-[14px]/[175%]">
+                <span class="font-extrabold">
+                  Venenatis diam dolor</span>
+                <span>
+                  Nullam senectus risus leo vel mi. Rutrum integer lorem
+                  pulvinar.</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-5 py-5">
+              <img src="images/blog/3.jpeg" alt="blog/3"
+                class="object-cover h-[75px] w-[75px] shrink-0 rounded-[10px]" />
+              <div class="flex flex-col text-[14px]/[175%]">
+                <span class="font-extrabold">
+                  Venenatis diam dolor</span>
+                <span>
+                  Nullam senectus risus leo vel mi. Rutrum integer lorem
+                  pulvinar.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SHARE SOCIAL -->
+        <div class="flex flex-col gap-4 px-8 py-6 bg-light-200 rounded-[18px]">
+          <h3 class="text-base/[130%] font-extrabold">Share Event</h3>
+          <div class="flex gap-12">
+            <a href="#">
+              <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-twitter-alt"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+    <img class="select-none" src="images/hexagen.png" alt="brand" />
+    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <i class="fi fi-rs-arrow-small-up"></i>
+      Back to Top
+    </span>
+  </button>
+  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+</body>
+
+</html>

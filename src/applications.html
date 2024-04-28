@@ -90,106 +90,105 @@
         </div>
       </div>
   </header>
-  <main class="container space-y-14 pb-6">
-    <header class="flex justify-between items-center">
-      <div class="space-y-5">
-        <h1 class="text-3xl text-primary font-semibold"> Upcoming Events</h1>
-        <p class="text-primary">Take a look at the events we attend and organize. </p>
+  <main class="container max-w-[1072px] space-y-16 pb-6 text-primary">
+    <header class="flex flex-col gap-11 justify-center items-center">
+      <div class="max-w-4xl text-center space-y-6">
+        <h1 class="text-redish">Marketing Specialist</h1>
+        <p>Mattis odio in mattis ut praesent ultricies arcu nunc. Sit malesuada
+          imperdiet ultrices egestas morbi erat cras condimentum. Tincidunt dignissim urna habitant laoreet scelerisque
+          imperdiet. </p>
       </div>
-      <div class="flex items-center gap-11 text-redish">
-        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Event Category</option>
-        </select><select name="country" id="country"
-          class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Event Type</option>
-        </select><select name="country" id="country"
-          class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Date</option>
-        </select>
-        <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-          Filter
-        </button>
+      <div class="flex divide-x divide-tertiary">
+        <div class="flex items-center gap-2 pr-8">
+          <i class="fi fi-rr-marker text-xl pt-1"></i>
+          Zagreb, Croatia
+        </div>
+        <div class="flex items-center gap-2 pl-8">
+          <i class="fi fi-tr-calendar-days text-xl pt-1"></i>
+          Full time
+        </div>
       </div>
     </header>
-    <section class="flex justify-between gap-6">
-      <div id="calendar"></div>
-      <div class="flex flex-col gap-5 w-full">
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <div class="flex items-center gap-2">
-              <span class="active-event"></span>
-              <span>Ongoing Event</span>
-            </div>
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Congress
-            </button>
+    <section>
+      <article class="space-y-4">
+        <h2>Turpis quam blandit</h2>
+        <p>Quam tempor convallis pretium in sit elit integer tincidunt. Gravida vel id tellus interdum tellus interdum
+          morbi. Turpis commodo eleifend in eget pharetra eget quisque. Vestibulum est nisl sagittis mollis sit.
+          Integer
+          eros nisi sem vitae auctor. Vestibulum phasellus aenean consequat metus. Vulputate in sit non nulla magnis
+          tortor. Commodo pharetra volutpat in velit. Risus congue massa mi tempus sed suspendisse. Faucibus amet
+          suspendisse sit diam accumsan a mauris a. Nulla aliquam nunc sit feugiat tortor ac at. Odio cras enim leo
+          lobortis nulla nunc. In elit sit eu sed eget.
+          </br>
+          </br>
+          In id ultrices ac blandit feugiat semper. Dictum sem sit habitasse a libero. Dui nunc ipsum eu porta tempus
+          vulputate congue. Eget maecenas dictum vulputate adipiscing. Eu massa nulla ultrices odio tellus. A aenean
+          laoreet id in feugiat ante magna. Nisl nec quam.</p>
+      </article>
+    </section>
+    <section>
+      <article class="roundedBox">
+        <h2>
+          Cursus at ultrices sit
+        </h2>
+        <p>
+          Adipiscing tincidunt aenean tincidunt nulla nullam purus sollicitudin. Fusce faucibus nec sed pharetra
+          bibendum. At ut aliquet nibh dignissim. Non velit aliquam lectus fames massa. Vulputate pretium duis massa
+          malesuada habitant in. Porta arcu luctus venenatis interdum non neque. Mauris tincidunt diam sem ipsum at
+          pellentesque laoreet fermentum gravida. Non id scelerisque libero mi. Senectus ornare elementum convallis ante
+          arcu. In nisi viverra diam duis sagittis nulla sapien odio diam.
+          <br />
+          <br />
+          Sit diam id consequat diam purus. Id dolor a neque neque neque blandit turpis semper pulvinar. Tincidunt neque
+          faucibus non nibh. Tincidunt quis arcu arcu sit sed amet. Mattis aenean ligula ut arcu feugiat vitae tortor et
+          eget. Facilisi quisque sed sed eget nec volutpat amet. Tempus diam est faucibus imperdiet suspendisse cum.
+          Ullamcorper urna molestie rhoncus metus erat aliquet. Mattis tellus mauris id velit cras tristique arcu
+          pellentesque tellus.
+        </p>
+      </article>
+    </section>
+    <section>
+      <form class="roundedBorderBox space-y-4">
+        <div class="grid grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="name" class="font-semibold">Name</label>
+            <input type="text" id="name" name="name" placeholder="For Ex: Cemre" required />
           </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-blue text-xs">Chromatography</span>
-              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
-                Agilent
-              </h2>
-            </div>
+          <div class="space-y-2">
+            <label for="surname" class="font-semibold">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="For Ex: Ceyhan" required />
           </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
         </div>
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <!-- <div class="flex items-center gap-2">
-              <i class="fi fi-rr-calendar w-4 h-4"></i>
-              <span>Ongoing Event</span>
-            </div> -->
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Congress
-            </button>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="city" class="font-semibold">City</label>
+            <input type="text" id="city" name="city" placeholder="For Ex: Podporiga" required />
           </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-blue text-xs">Chromatography</span>
-              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
-                Agilent
-              </h2>
-            </div>
+          <div class="space-y-2">
+            <label for="country" class="font-semibold">Country</label>
+            <input type="text" id="country" name="country" placeholder="For Ex: Montenegro" required />
           </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
         </div>
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Trade Show
-            </button>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="phone" class="font-semibold">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="For Ex: +90 536 875 84 66" required />
           </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-green text-xs">Spectrometer</span>
-              <h2 class="text-2xl font-semibold text-primary">Bioexpo Trade Show</h2>
-            </div>
-          </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
+          <button class="outlinedButton w-full self-end flex items-center justify-center gap-2">
+            <i class="fi fi-rs-cloud-upload-alt pt-2 text-2xl"></i>
+            Upload CV
+          </button>
         </div>
-      </div>
+        <div class="grid grid-cols-2 gap-6 items-center">
+          <div class="flex items center gap-3">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">In hendrerit viverra tempor</label>
+          </div>
+          <button class="filledButton">
+            Send
+          </button>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="container space-y-32 text-primary">

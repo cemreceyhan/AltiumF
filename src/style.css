@@ -24,6 +24,35 @@ ul {
   padding: 0;
 }
 
+h1 {
+  @apply text-[32px]/[130%] font-extrabold text-primary;
+}
+
+h2 {
+  @apply text-[32px]/[130%] font-semibold text-primary;
+}
+h3 {
+  @apply text-[20px]/[130%] text-primary;
+}
+h4 {
+  @apply text-[16px]/[130%] text-primary;
+}
+
+p {
+  @apply text-base/[170%] text-primary;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea {
+  @apply w-full rounded-[10px] bg-light-200 p-4 focus:outline-none;
+}
+
+button {
+  @apply py-1 focus:outline-none;
+}
+
 /* ########################################
 ########## COMPONENTS STYLING #############
 ######################################## */
@@ -58,6 +87,26 @@ ul {
 /* ########################################
 ######### UTILITIES STYLING ###############
 ######################################## */
+
+.roundedBox {
+  @apply space-y-6 rounded-[18px] bg-light-200 p-[54px];
+}
+
+.roundedBorderBox {
+  @apply rounded-[18px] border border-tertiary px-[42px] py-[30px];
+}
+
+.outlinedButton {
+  @apply h-[55px] border border-redish font-medium text-redish duration-200 hover:bg-redish hover:text-white;
+}
+
+.filledButton {
+  @apply h-[55px] bg-redish font-medium text-white duration-200 hover:bg-redish-100/80;
+}
+
+.blogListItem {
+  @apply rounded-[5px] border border-redish px-[15px] py-[5px] text-redish;
+}
 
 /* ########################################
 ############# CUSTOM FONTS ################

@@ -4,9 +4,9 @@ const headerBar = document.querySelector('#header-main nav');
 const megaMenu = document.getElementById('mega-menu');
 const megaMenuSub = document.getElementById('mega-sub');
 const megaMenuSide = document.getElementById('mega-side');
+const toUpButton = document.getElementById('to-up');
 
 const currentRoute = window.location.pathname.split('/').pop();
-console.log(currentRoute);
 
 const createNavItem = (item) => {
   const navItem = document.createElement('a');
@@ -96,3 +96,18 @@ navList.forEach((item) => {
 });
 
 // MEGA MENU SECTION END
+
+toUpButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 150) {
+    toUpButton.classList.remove('hidden');
+  } else {
+    toUpButton.classList.add('hidden');
+  }
+});

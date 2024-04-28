@@ -91,8 +91,8 @@
       </div>
   </header>
   <main class="container pb-6">
-    <section class="grid grid-cols-9 gap-6 items-start text-primary">
-      <div class="col-span-7 space-y-6">
+    <section class="grid grid-cols-12 gap-6 items-start text-primary">
+      <div class="col-span-9 space-y-6">
         <!-- EVENT DETAILS AREA -->
         <article class="border-tertiary/30 border rounded-[18px] p-10 relative overflow-hidden">
           <div class="absolute right-0 scale-125">
@@ -153,39 +153,34 @@
                 <div class="grid grid-cols-2 gap-6">
                   <div class="space-y-2">
                     <label for="name" class="font-semibold">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name"
-                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
                   </div>
                   <div class="space-y-2">
                     <label for="title" class="font-semibold">Title</label>
-                    <input type="text" id="title" name="title" placeholder="Title"
-                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                    <input type="text" id="title" name="title" placeholder="Title" required />
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-6">
                   <div class="space-y-2">
-                    <label for="email" class="font-semibold">Phone</label>
-                    <input type="email" id="email" name="email" placeholder="Phone"
-                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                    <label for="phone" class="font-semibold">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required />
                   </div>
                   <div class="space-y-2">
-                    <label for="phone" class="font-semibold">Email</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Email"
-                      class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required />
+                    <label for="email" class="font-semibold">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
                   </div>
                 </div>
 
                 <div class="space-y-2">
                   <label for="address" class="font-semibold">Address</label>
-                  <textarea id="address" rows="1" name="address" placeholder="Address"
-                    class="w-full bg-light-200 rounded-[10px] p-4 focus:outline-none" required></textarea>
+                  <textarea id="address" rows="1" name="address" placeholder="Address" required></textarea>
                 </div>
                 <div class="flex items-center gap-14">
-                  <div class="flex items center gap-4">
+                  <div class="flex items center gap-3">
                     <input type="checkbox" id="terms" name="terms" required />
                     <label for="terms">I accept the terms and conditions</label>
                   </div>
-                  <div class="flex items center gap-4">
+                  <div class="flex items center gap-3">
                     <input type="checkbox" id="nameHere" name="nameHere" required />
                     <label for="nameHere">In hendrerit viverra tempor</label>
                   </div>
@@ -206,7 +201,7 @@
         </div>
       </div>
       <!-- EVENT INFORMATIONS -->
-      <aside class="col-span-2 space-y-3">
+      <aside class="col-span-3 space-y-3">
         <div class="border-tertiary border rounded-[18px] p-8 space-y-4">
           <h3 class="text-base/[130%] font-extrabold">Event Informations Form</h3>
           <div class="border border-tertiary rounded-[10px] px-8 py-4 divide-x-2 divide-tertiary flex items-center">
@@ -336,6 +331,13 @@
     </div>
     <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
   </footer>
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+    <img class="select-none" src="images/hexagen.png" alt="brand" />
+    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <i class="fi fi-rs-arrow-small-up"></i>
+      Back to Top
+    </span>
+  </button>
   <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
 </body>
 
