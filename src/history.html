@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Altium</title>
+</head>
+
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container space-y-14 pb-6">
+    <!-- ABOUT US AREA -->
+    <nav class="flex flex-col items-center justify-center gap-9 pt-6">
+      <!-- ABOUT US CATEGORY LIST -->
+      <ul class="self-center flex items-center gap-[10px]">
+        <li>
+          <a class="aboutUsMenuItem" href="#">About Us</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Core Values</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem aboutUsMenuItemActive" href="#">History</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Our People</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Sustainability</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- HISTORY CONTENT -->
+    <section class="flex items-center justify-center relative">
+      <div class="text-primary">
+        <div class="hidden sm:block w-[1px] bg-light-200 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">1988</span>
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center p-4">
+              SEM LAB established to sell consumables and provide application & hardware support for Agilent (HP) and
+              other manufacturers’ instruments.
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
+              SEM LAB appointed Agilent (HP) distributor for Turkey.
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">1990</span>
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">1997</span>
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center p-4">
+              Altium established to participate in Turkish Government tenders.
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
+              Ege Analiz established to provide contract laboratory services
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">1997</span>
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2000</span>
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center p-4">
+              HPST established to replace former Agilent subsidiary covering Czech Republic.
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
+              Altium established to participate in Turkish Government tenders.
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2002</span>
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2008</span>
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center p-4">
+              HPST established to replace former Agilent subsidiary covering Czech Republic.
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
+              AlphaChrom established to replace failing former distributor covering Croatia, Bosnia & Herzegovina, and
+              Kosovo.
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2009</span>
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2017</span>
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center p-4">
+              Agilrom Scientific becomes part of Altium group as distributor for Romania.
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12">
+          <div class="flex flex-col sm:flex-row items-center gap-20">
+            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
+              DSP Chromatography, the distributor for Agilent brand in Serbia, Montenegro, and Macedonia territories,
+              joined Altium.
+            </div>
+            <div class="flex justify-start w-full mx-auto items-center">
+              <span class="text-redish text-[32px] font-extrabold">2022</span>
+            </div>
+            <div
+              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+    <img class="select-none" src="images/hexagen.png" alt="brand" />
+    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <i class="fi fi-rs-arrow-small-up"></i>
+      Back to Top
+    </span>
+  </button>
+  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+</body>
+
+</html>

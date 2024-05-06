@@ -21,6 +21,7 @@ export default {
         'redish-100': '#D71920',
         'light-100': '#F9F9F9',
         'light-200': '#F3F3F3',
+        'light-300': '#D9D9D9',
         'event-blue': '#262E85',
         'event-green': '#1E9C4A',
       },

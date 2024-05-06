@@ -108,6 +108,18 @@ button {
   @apply rounded-[5px] border border-redish px-[15px] py-[5px] text-redish;
 }
 
+.aboutUsMenuItem {
+  @apply rounded-[10px] border border-light-200 bg-light-200 px-[20px] py-[14px] text-[16px]/[130%] text-primary  duration-200 hover:border-redish hover:bg-redish hover:text-white;
+}
+
+.aboutUsMenuItemActive {
+  @apply border-redish bg-white;
+}
+
+.selectBox {
+  @apply rounded-[10px] border border-tertiary p-4 focus:outline-none;
+}
+
 /* ########################################
 ############# CUSTOM FONTS ################
 ######################################## */

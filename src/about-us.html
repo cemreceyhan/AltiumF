@@ -91,104 +91,74 @@
       </div>
   </header>
   <main class="container space-y-14 pb-6">
-    <header class="flex justify-between items-center">
-      <div class="space-y-5">
-        <h1 class="text-3xl text-primary font-semibold"> Upcoming Events</h1>
-        <p class="text-primary">Take a look at the events we attend and organize. </p>
-      </div>
-      <div class="flex items-center gap-11 text-redish">
-        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Event Category</option>
-        </select>
-        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Event Type</option>
-        </select>
-        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
-          <option value="">Date</option>
-        </select>
-        <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-          Filter
-        </button>
-      </div>
+    <!-- ABOUT US HEADER -->
+    <header class="flex flex-col justify-between gap-5">
+      <h1>Blog</h1>
+      <p>We help you better understand the Content Lab world and apply it to your business model with the original
+        content we create as a guide!</p>
     </header>
-    <section class="flex justify-between gap-6">
-      <div id="calendar"></div>
-      <div class="flex flex-col gap-5 w-full">
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <div class="flex items-center gap-2">
-              <span class="active-event"></span>
-              <span>Ongoing Event</span>
-            </div>
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Congress
-            </button>
-          </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-blue text-xs">Chromatography</span>
-              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
-                Agilent
-              </h2>
-            </div>
-          </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
-        </div>
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <!-- <div class="flex items-center gap-2">
-              <i class="fi fi-rr-calendar w-4 h-4"></i>
-              <span>Ongoing Event</span>
-            </div> -->
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Congress
-            </button>
-          </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-blue text-xs">Chromatography</span>
-              <h2 class="text-2xl font-semibold text-primary">HPLC Method Development: From Beginner to Expert, Part 1 -
-                Agilent
-              </h2>
-            </div>
-          </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
-        </div>
-        <div
-          class="pl-16 pr-12 py-11 border-tertiary border rounded-[18px] grid grid-cols-12 gap-6 items-center divide-x h-44">
-          <div class="text-redish flex flex-col col-span-2 items-start gap-2">
-            <button class="px-5 py-2 border border-redish rounded-[.625rem]">
-              Trade Show
-            </button>
-          </div>
-          <div class="col-span-6 flex justify-center">
-            <div class="flex flex-col w-[90%] gap-3">
-              <span class="text-event-green text-xs">Spectrometer</span>
-              <h2 class="text-2xl font-semibold text-primary">Bioexpo Trade Show</h2>
-            </div>
-          </div>
-          <div class="flex flex-col px-4 col-span-3 h-full justify-center pl-10 text-primary">
-            <span>Online / 8 Feb 2024</span>
-            <span>Kayseri, Turkey</span>
-          </div>
-          <a href="#" class="col-span-1 flex self-end items-center h-full w-[25%]">
-            <i class="fi fi-ts-arrow-small-right text-4xl pl-10"></i>
-          </a>
-        </div>
+    <!-- ABOUT US AREA -->
+    <nav class="flex flex-col items-center justify-center gap-9">
+      <!-- ABOUT US CATEGORY LIST -->
+      <ul class="self-center flex items-center gap-[10px]">
+        <li>
+          <a class="aboutUsMenuItem aboutUsMenuItemActive" href="#">About Us</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Core Values</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">History</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Our People</a>
+        </li>
+        <li>
+          <a class="aboutUsMenuItem" href="#">Sustainability</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ABOUT US CONTENT -->
+    <section class="px-20 pt-14 space-y-20">
+      <div class="grid grid-cols-5 gap-9">
+        <article class="col-span-2 space-y-8">
+          <h1 class="text-redish">About Us</h1>
+          <p>Trading company Altium International doo is an authorized distributor of
+            analytical equipment of Agilent Technologies for Croatia, Bosnia and Herzegovina and Kosovo, an authorized
+            distributor of Ortho Clinical Diagnostics for Croatia and other instruments and equipment of a number of
+            leading global companies for the above markets.
+          </p>
+          <p> Agilent Technologies is a leading manufacturer of analytical equipment in the field of natural sciences,
+            diagnostics and applied chemistry. Ortho Clinical Diagnostics has one of the leading positions in the field
+            of transfusion medicine, clinical chemistry and immunodiagnostics.</p>
+          <p>Altium International in Croatia and Bosnia and Herzegovina employs 57 highly educated employees in sales,
+            administration and maintenance who are authorized to work with instruments from Agilent Technologies and
+            other manufacturers whose instruments it distributes.</p>
+        </article>
+        <img class="col-span-3 max-h-[490px] rounded-[18px] w-full h-full object-cover" src="images/about-us/1.jpeg"
+          alt="About Us" />
+      </div>
+      <div class="grid grid-cols-5 gap-9">
+        <img class="col-span-2 max-h-[490px] rounded-[18px] w-full h-full object-cover" src="images/about-us/1.jpeg"
+          alt="About Us" />
+        <article class="col-span-3 space-y-4">
+          <h1 class="text-redish">Policies, Corporate Governance & Compliance</h1>
+          <h4 class="text-redish">Conducting the business according to applicable law and company rules;</h4>
+          <p>SEM Group respects applicable law, including international laws, and requires all of its employees and
+            business partners to do likewise.
+          </p>
+          <p>Below lists some of the main points that are of particular practical relevance;</p>
+          <ul class="text-primary list-disc px-8">
+            <li>Employee Relations and Rules</li>
+            <li>Customer Relations</li>
+            <li>Supplier, Dealer and Service Relations</li>
+            <li>Competitor Relations and Competition</li>
+            <li>Event participation</li>
+            <li>Customer gifts</li>
+            <li>Information Management</li>
+            <li>Confidentially</li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>
