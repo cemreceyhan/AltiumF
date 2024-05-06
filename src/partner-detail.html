@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <title>Altium</title>
+</head>
+
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <div class="space-y-4 container min-h-56">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Vite" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container pb-6 space-y-10">
+    <header class="space-y-5 max-w-5xl">
+      <p class="text-[12px]">Our Partners / Agilent</p>
+      <h1>Agilent</h1>
+    </header>
+    <section class="grid grid-cols-12 gap-6 text-primary">
+      <!-- BRAND INFO -->
+      <div class="roundedBox col-span-6 flex flex-col gap-10">
+        <div class="flex items-center justify-around"> <img src="images/brands/1.png" class="w-44 object-cover"
+            alt="Agilent" />
+          <div class="h-1/2 w-[1px] !m-0 bg-light-300"></div>
+          <span class="flex flex-col justify-center !m-0">
+            Website
+            <a href="https://www.agilent.com/" class="underline underline-offset-4">
+              https://www.agilent.com
+            </a>
+          </span>
+        </div>
+        <p>Blandit sollicitudin pellentesque consectetur sit. Dis nec non tristique a. Purus ornare pulvinar volutpat
+          quis in. A tempus dis nam blandit. Imperdiet sit massa sed facilisis. Molestie non nam odio pellentesque
+          scelerisque ac lectus. Proin quam velit turpis aliquam enim sapien ut orci. Tortor vitae ut quisque nunc ac.
+          Est integer quis euismod mus tortor bibendum cursus. Tempus donec iaculis aliquam mollis.</p>
+      </div>
+      <div class="roundedBox col-span-6 items-start">
+        <!-- INTERESTED CATEGORIES -->
+        <div class="flex flex-wrap w-3/4 gap-5">
+          <button class="red-hovered-button">
+            Gas Chromatography
+          </button>
+          <button class="red-hovered-button">
+            Liquid Chromatography
+          </button>
+          <button class="red-hovered-button">
+            Mass Spectrometry
+          </button>
+          <button class="red-hovered-button">
+            Spectrometry
+          </button>
+        </div>
+        <p>Fermentum sit quis morbi tortor. Arcu nullam consequat porttitor arcu massa feugiat faucibus orci. Sit
+          gravida dui nulla pellentesque scelerisque maecenas turpis enim ornare. In mauris egestas eget nibh ut
+          aliquet. Dignissim vel sed nunc sed nam ac donec erat augue.
+          Turpis quis mauris aliquet dignissim facilisis. Cras ut etiam dolor molestie. Tellus.</p>
+      </div>
+    </section>
+    <section class="grid grid-cols-12 gap-6 text-primary">
+      <div class="roundedBox col-span-3 !space-y-4">
+        <h4 class="font-semibold">Analitik Cihaz Sistemi</h4>
+        <ul class="!m-0 space-y-1 !ml-4">
+          <li>Gas Chromatography</li>
+          <li>Liquid Chromatography</li>
+          <ul class="ml-8 !my-4 space-y-2">
+            <li>LC Sistemleri</li>
+            <li>GPCSEC Sistemlerii</li>
+            <li class="text-redish">LC Saflaştırma Sistemleri</li>
+            <li>LC Pompa Sistemleri</li>
+          </ul>
+          <li>Mass Spectrometry</li>
+          <li>Spectrometry</li>
+        </ul>
+        <h4 class="font-semibold">Laboratuvar Çözümleri ve Kimyasallar</h4>
+        <h4 class="font-semibold">Yaşam Bilimleri ve Diagnostik</h4>
+        <h4 class="font-semibold">JASEM Klinik ve Gıda Kitleri</h4>
+      </div>
+      <div
+        class="roundedBorderBox hover:border-redish duration-300 group flex items-center justify-center col-span-3 relative">
+        <img src="images/brands/products/1.png" alt="product"
+          class="h-[65%] w-[65%] group-hover:scale-110 duration-300" />
+        <button
+          class="opacity-0 group-hover:opacity-100 text-redish absolute left-1/2 bottom-10 -translate-x-1/2 -translate-y-1/2 duration-300">
+          Explore Product
+        </button>
+      </div>
+      <div
+        class="roundedBorderBox hover:border-redish duration-300 group flex items-center justify-center col-span-3 relative">
+        <img src="images/brands/products/1.png" alt="product"
+          class="h-[65%] w-[65%] group-hover:scale-110 duration-300" />
+        <button
+          class="opacity-0 group-hover:opacity-100 text-redish absolute left-1/2 bottom-10 -translate-x-1/2 -translate-y-1/2 duration-300">
+          Explore Product
+        </button>
+      </div>
+      <div
+        class="roundedBorderBox hover:border-redish duration-300 group flex items-center justify-center col-span-3 relative">
+        <img src="images/brands/products/1.png" alt="product"
+          class="h-[65%] w-[65%] group-hover:scale-110 duration-300" />
+        <button
+          class="opacity-0 group-hover:opacity-100 text-redish absolute left-1/2 bottom-10 -translate-x-1/2 -translate-y-1/2 duration-300">
+          Explore Product
+        </button>
+      </div>
+
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-9">
+        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address>
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-4">
+          <a href="#">
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-twitter-alt"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+    <img class="select-none" src="images/hexagen.png" alt="brand" />
+    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <i class="fi fi-rs-arrow-small-up"></i>
+      Back to Top
+    </span>
+  </button>
+  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+</body>
+
+</html>

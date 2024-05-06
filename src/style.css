@@ -84,6 +84,10 @@ button {
   @apply p-4;
 }
 
+.red-hovered-button {
+  @apply rounded-[.625rem] border border-light-300 bg-white px-5 py-[.875rem] text-primary duration-500 hover:border-redish hover:bg-redish hover:text-white;
+}
+
 /* ########################################
 ######### UTILITIES STYLING ###############
 ######################################## */
