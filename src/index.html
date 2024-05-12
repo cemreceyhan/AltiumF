@@ -1,96 +1,620 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ddZ6ii" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/image-slider.js"></script>
+  <script type="module" src="js/element-slider.js"></script>
   <script type="module" src="js/main.js"></script>
-  <title>Document</title>
+  <title>Altium</title>
 </head>
 
-<body class="flex flex-col gap-20 items-center justify-center min-h-screen">
-
-  <img src="images/logo.png" alt="logo" class="w-64" />
-
-  <!-- AVAILABLE PAGES -->
-  <div class="grid grid-cols-5 gap-5">
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center" href="about-us.html">
-      <button>
-        About Us
+<body class="space-y-12 relative">
+  <header class="relative bg-light-100">
+    <!-- DESKTOP HEADER -->
+    <div class="space-y-4 container min-h-56 hidden 2xl:block">
+      <nav id="header-bar"
+        class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+        <!-- SEARCH -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fi fi-rs-search w-4 h-4"></i>
+            Search
+          </a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- USEFUL ROUTES -->
+        <div class="flex items-center gap-8">
+          <a href="#">Our Partners</a>
+          <a href="#" class="flex items-center">Blog</a>
+          <a href="#" class="flex items-center">Human Resources</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- LANGUAGES -->
+        <div class="flex items-center gap-4">
+          <a href="#">EN</a>
+          <div class="h-3 w-[1px] bg-primary"></div>
+          <a href="#" class="opacity-50">HR</a>
+        </div>
+        <div class="h-5 w-[1px] bg-primary"></div>
+        <!-- SELECT COUNTRY -->
+        <select name="country" id="country" class="bg-transparent border-none active:outline-none focus:outline-none">
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+      </nav>
+      <div id="header-main" class="hidden 2xl:flex items-center justify-between px-4 py-6 text-primary font-medium">
+        <!-- LOGO -->
+        <a href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="flex items-center gap-8 py-4">
+        </nav>
+        <button
+          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+        <button class="relative">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+      </div>
+      <!-- MEGA MENU -->
+      <div id="mega-menu" class="megaMenu hidden">
+        <div class="flex gap-10 w-full">
+          <!-- MEGA SIDE -->
+          <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+            <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+              <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+            </ul>
+            <div class="space-y-4">
+              <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
+                euismod pulvinar
+                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <!-- MEGA SUB-->
+          <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DESKTOP HEADER END -->
+    <!-- MOBILE HEADER START -->
+    <div class="container flex items-center justify-between 2xl:hidden px-4 py-5">
+      <a href="/">
+        <img src="images/logo.png" alt="Altium" />
+      </a>
+      <button id="menu" class="flex items-center justify-center w-12 h-12 rounded-[.625rem] text-primary font-semibold">
+        <i class="fi fi-sr-menu-burger text-xl"></i>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="core-values.html">
-      <button>
-        About Us -> Core Values
+    </div>
+    <!-- MOBILE HEADER END -->
+  </header>
+  <main class="space-y-14 pb-6 px-4">
+    <!-- TOP SLIDER SECTION -->
+    <section class="grid grid-cols-2 gap-6 container">
+      <header class="flex flex-col gap-14 xl:gap-24 col-span-2 2xl:col-span-1 relative">
+        <!-- CONTENT PREVIEW -->
+        <div class="space-y-4">
+          <h1 class="text-[32px]/[130%] md:text-[36px]/[130%] 2xl:text-[44px]/[130%] 2xl:text-[64px]/[130%]">
+            Solutions to Optimize Your Workflow
+          </h1>
+          <p>Gas chromatography (GC) helps scientists ensure the safety, quality, and purity of our food, air, water,
+            and pharmaceuticals; determine the composition and consistency of fuels and chemicals; and test for
+            controlled substances in criminal investigations and sporting competitions.
+          </p>
+          <button
+            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish self-start">
+            Read More
+          </button>
+        </div>
+        <!-- SELECTABLE CONTENTS START -->
+        <div class="roundedBox !space-y-0 gap-4 text-[14px]/[141%] text-primary !px-3 hidden 2xl:flex">
+          <button class="active group relative hover:text-redish duration-200 min-w-16">
+            Gas Chromatography
+            <span
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+          </button>
+          <div class="w-[1px] h-8 self-center bg-tertiary"></div>
+          <button class="group relative hover:text-redish duration-200 min-w-16">
+            Confocal Microscope
+            <span
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+          </button>
+          <div class="w-[1px] h-8 self-center bg-tertiary"></div>
+          <button class="group relative hover:text-redish duration-200 min-w-16">
+            Gene
+            Expression
+            In a Single Cell
+            <span
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+          </button>
+          <div class="w-[1px] h-8 self-center bg-tertiary"></div>
+          <button class="group relative hover:text-redish duration-200 min-w-16">
+            LDIR
+            <span
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+          </button>
+          <div class="w-[1px] h-8 self-center bg-tertiary"></div>
+          <button class="group relative hover:text-redish duration-200 min-w-16">
+            2.5 Hexadione
+            Amino Acid
+            <span
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+          </button>
+        </div>
+        <!-- SELECTABLE CONTENTS END -->
+        <div class="absolute left-1/2 scale-125 -z-10 hidden 2xl:block">
+          <img class="-mb-20 -ml-8" src="images/detail2.png" />
+          <img src="images/detail1.png" />
+        </div>
+      </header>
+      <div class="col-span-2 2xl:col-span-1 relative">
+        <div class="relative min-h-[565px] flex-1 overflow-hidden rounded-3xl">
+          <div id="gallery" class="absolute left-0 flex h-full w-full transition-all duration-500 ease-in-out">
+            <!-- IMAGES ARE CREATED BY IMAGE-SLIDER.JS, AT JS FOLDER -->
+          </div>
+        </div>
+        <div class="absolute bottom-5 left-10 flex gap-6">
+          <button id="prev"
+            class="border-white border w-20 h-20 rounded-full text-white hover:bg-gray-800/20 text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
+          </button>
+          <button id="next"
+            class="border-white border w-20 h-20 rounded-full text-white hover:bg-gray-800/20 text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURED PRODUCTS START -->
+    <section class="flex flex-col gap-8 overflow-hidden">
+      <header class="container relative">
+        <div class="flex flex-col justify-between gap-5">
+          <h1 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">Featured Products</h1>
+          <p>Aliquam sed blandit proin enim. A turpis donec sed sit. Nisi pulvinar aliquet velit.</p>
+        </div>
+        <div class="flex gap-5 absolute right-0 top-0">
+          <button id="prev-featured"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
+          </button>
+          <button id="next-featured"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
+          </button>
+        </div>
+      </header>
+      <div id="gallery-featured" class="flex container gap-8 h-full w-full transition-all duration-500 ease-in-out">
+        <!-- ELEMENTS ARE CREATED BY ELEMENT-SLIDER.JS, AT JS FOLDER -->
+      </div>
+    </section>
+    <!-- FEATURED PRODUCTS END -->
+    <!-- FEATURES START -->
+    <section
+      class="container flex flex-col 2xl:grid 2xl:border-y 2xl:border-tertiary 2xl:grid-cols-2 2xl:grid-rows-2 divide-tertiary">
+      <!-- ROW SPAN 1: TECHNICAL SUPPORT START -->
+      <div
+        class="row-span-1 col-span-2 2xl:col-span-1 flex justify-between 2xl:py-16 2xl:pr-10 pb-10 2xl:pb-0 border-b border-tertiary">
+        <div class="flex flex-col items-start gap-5">
+          <h2 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">Technical Support</h2>
+          <p class="2xl:w-5/6">What is important to us is that our devices can operate with high efficiency for many
+            years.
+            To achieve
+            this, take a look at the solutions offered by Altium Technique.</p>
+          <button
+            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+            More</button>
+        </div>
+        <img src="images/altium-tech.png" alt="Altium Tech Support" class="w-56 h-48 object-cover hidden 2xl:flex" />
+      </div>
+      <!-- ROW SPAN 1: TECHNICAL SUPPORT END -->
+      <!-- ROW SPAN 2: NEWS & ANNOUNCEMENTS START -->
+      <div
+        class="row-span-2 2xl:py-16 2xl:pl-10 2xl:border-l border-b 2xl:border-b-0 border-tertiary 2xl:space-y-14 space-y-0 pt-10 order-2 2xl:order-none">
+        <div class="flex justify-between items-center">
+          <h2 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">News & Announcements</h2>
+          <button
+            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">See
+            All</button>
+        </div>
+        <div class="flex flex-col divide-tertiary divide-y text-primary">
+          <div class="flex items-start gap-12 py-8">
+            <img src="images/phi-logo.png" alt="Altium Tech Support" class="w-56 object-cover rounded-2xl" />
+            <div class="space-y-6">
+              <h3 class="font-semibold">WELCOME PHI !!!</h3>
+              <p class="w-5/6">Here is the note from our CEO, Goran Dubravcic: “PHI and Altium share the same vision
+                that regenerative medicine...</p>
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+            </div>
+          </div>
+          <div class="px-5 2xl:px-0 py-8 font-semibold">
+            <a href="#" class="hover:text-redish">Altium International is a silver medal winner for
+              sustainability!</a>
+          </div>
+          <div class="px-5 2xl:px-0 py-8 font-semibold">
+            <a href="#" class="hover:text-redish">They live in Altium for a week</a>
+          </div>
+          <div class="px-5 2xl:px-0 py-8 font-semibold">
+            <a href="#" class="hover:text-redish">Integration of PSS and Agilent</a>
+          </div>
+        </div>
+      </div>
+      <!-- ROW SPAN 2: NEWS & ANNOUNCEMENTS END -->
+      <!-- ROW SPAN 1: A SUSTAINABLE FUTURE START -->
+      <div
+        class="row-span-1 border-b border-tertiary 2xl:border-0 flex justify-between py-16 pr-10 order-1 2xl:order-none">
+        <div class="flex flex-col items-start gap-5">
+          <h2 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">A Sustainable Future</h2>
+          <p class="2xl:w-5/6">At Altium we are committed to conducting our business in a socially, environmentally, and
+            economically responsible manner...</p>
+          <button
+            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+            More</button>
+        </div>
+        <img src="images/future.jpeg" alt="Sustainable Future" class="w-56 object-cover rounded-2xl hidden 2xl:flex" />
+      </div>
+      <!-- ROW SPAN 1: A SUSTAINABLE FUTURE END -->
+    </section>
+    <!-- FEATURES END -->
+    <!-- SECTORS START -->
+    <section class="container grid 2xl:grid-cols-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-sr-hand-holding-heart text-[42px]"></i>
+        <span>Health</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center" href="history.html">
-      <button>
-        About Us -> History
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-sr-wheat text-[42px]"></i>
+        <span>Food</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="our-people.html">
-      <button>
-        About Us -> Our People
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-ss-tshirt text-[42px]"></i>
+        <span>Textile</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="applications.html">
-      <button>
-        Applications
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-rr-fingerprint text-[42px]"></i>
+        <span>Forensic Science</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center" href="blog.html">
-      <button>
-        Blog
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-ss-raindrops text-[42px]"></i>
+        <span>Energy & Petrochemistry</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="blog-detail.html">
-      <button>
-        Blog Detail
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-rr-pickaxe text-[42px]"></i>
+        <span>Mining & Material Science</span>
       </button>
-    </a>
-    <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center" href="#">
-      <button>
-        Contact
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-rr-flask text-[42px]"></i>
+        <span>Chemicals</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center" href="events.html">
-      <button>
-        Events
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-rr-dna text-[42px]"></i>
+        <span>Genetics</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="event-detail.html">
-      <button>
-        Event Detail
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-sr-capsules text-[42px]"></i>
+        <span>Pharmaceutical</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="human-resources.html">
-      <button>
-        Human Resources
+      <button
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        <i class="fi fi-sr-leaf text-[42px]"></i>
+        <span>Environmental</span>
       </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="our-partners.html">
-      <button>
-        Our Partners
-      </button>
-    </a>
-    <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center"
-      href="partner-detail.html">
-      <button>
-        Our Partners -> Detail
-      </button>
-    </a>
-  </div>
-
+    </section>
+    <!-- SECTORS END -->
+    <!-- PARTNERS START -->
+    <section
+      class="flex flex-col gap-8 2xl:container 2xl:grid 2xl:grid-cols-2 2xl:rounded-[18px] 2xl:border 2xl:border-tertiary overflow-hidden">
+      <header class="self-end 2xl:!p-10 relative col-span-2 2xl:col-span-1 container">
+        <div class="flex flex-col justify-between gap-5">
+          <h1 class="2xl:text-[32px]/[130%] text-[20px]/[130%] font-extrabold">Our Partners</h1>
+          <p class="2xl:w-1/2">
+            Eget a nulla nunc mauris dictum. Cras id porttitor curabitur sed eu. Aliquet ut pulvinar
+            elementum vel justo ullamcorper non tincidunt. Risus scelerisque suspendisse gravida leo facilisi facilisis.
+            Scelerisque dui risus donec auctor et. Non curabitur ac tellus auctor et neque dolor.
+          </p>
+        </div>
+        <div class="flex 2xl:hidden gap-5 absolute right-0 top-0">
+          <button id="prev-partners"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
+          </button>
+          <button id="next-partners"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
+          </button>
+        </div>
+      </header>
+      <!-- PARTNERS DESKTOP START -->
+      <table class="col-span-1 hidden 2xl:inline-table">
+        <tbody>
+          <tr class="border border-r-0 first:border-t-0 last:border-b-0 border-tertiary">
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+          </tr>
+          <tr class="border border-r-0 first:border-t-0 last:border-b-0 border-tertiary">
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+          </tr>
+          <tr class="border border-r-0 first:border-t-0 last:border-b-0 border-tertiary">
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+          </tr>
+          <tr class="border border-r-0 first:border-t-0 last:border-b-0 border-tertiary">
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/1.png" alt="Partner 1" class="object-cover h-10" />
+              </div>
+            </td>
+            <td class="border border-tertiary border-t-0 border-b-0 last:border-r-0">
+              <div class="flex items-center justify-center h-[117px]">
+                <img src="images/brands/2.png" alt="Partner 2" class="object-cover h-10" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- PARTNERS DESKTOP END -->
+      <!-- PARTNERS MOBILE START -->
+      <div id="gallery-partners"
+        class="flex container 2xl:hidden gap-8 h-full w-full transition-all duration-500 ease-in-out">
+        <!-- ELEMENTS ARE CREATED BY ELEMENT-SLIDER.JS, AT JS FOLDER -->
+      </div>
+    </section>
+    <!-- PARTNERS END -->
+    <!-- UPCOMING EVENTS START -->
+    <section class="flex flex-col gap-8 overflow-hidden">
+      <header class="container relative">
+        <div class="flex flex-col justify-between gap-5">
+          <h1 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">Upcoming Events</h1>
+          <p>Take a look at the events we attend and organize.</p>
+        </div>
+        <div class="flex gap-5 absolute right-0 top-0">
+          <button id="prev-events"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
+          </button>
+          <button id="next-events"
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
+          </button>
+        </div>
+      </header>
+      <div id="gallery-events" class="flex container gap-8 h-full w-full transition-all duration-500 ease-in-out">
+        <!-- ELEMENTS ARE CREATED BY ELEMENT-SLIDER.JS, AT JS FOLDER -->
+      </div>
+    </section>
+    <!-- UPCOMING EVENTS END -->
+    <!-- BLOG START -->
+    <section class="container flex flex-col gap-8">
+      <header class="flex items-center justify-between">
+        <div class="flex flex-col justify-between gap-5">
+          <h1 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">Blog</h1>
+          <p class="w-4/5">
+            We help you better understand the Content Lab world and apply it to your business model with the original
+            content we create as a guide!
+          </p>
+        </div>
+        <button
+          class="pb-1 shrink-0 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish self-start">
+          See All
+        </button>
+      </header>
+      <div class="grid 2xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 w-full gap-6">
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+          <img src="images/blog/1.jpeg" alt="blog/1" class="object-cover h-1/2 w-full" />
+          <div class="px-[38px] py-[43px] space-y-8">
+            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+            </h3>
+            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <div class="flex items-center justify-between">
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+          <img src="images/blog/2.jpeg" alt="blog/2" class="object-cover h-1/2 w-full" />
+          <div class="px-[38px] py-[43px] space-y-8">
+            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+            </h3>
+            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <div class="flex items-center justify-between">
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+          <img src="images/blog/3.jpeg" alt="blog/3" class="object-cover h-1/2 w-full" />
+          <div class="px-[38px] py-[43px] space-y-8">
+            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+            </h3>
+            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <div class="flex items-center justify-between">
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
+          <img src="images/blog/4.jpeg" alt="blog/4" class="object-cover h-1/2 w-full" />
+          <div class="px-[38px] py-[43px] space-y-8">
+            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+            </h3>
+            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <div class="flex items-center justify-between">
+              <button
+                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
+                More</button>
+              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="container space-y-32 text-primary px-4">
+    <div class="bg-light-200 rounded-[18px] grid grid-cols-1 2xl:grid-cols-4 py-[70px] px-10">
+      <div
+        class="flex flex-col items-center justify-center gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        <a class="" href="/">
+          <img src="images/logo.png" alt="Altium" />
+        </a>
+        <p class="">Altium International d.o.o.</p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-5">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-9 py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Contact</h1>
+        <a href="mailto:web.hr@altium.net">
+          <span class="underline underline-offset-4">
+            web.hr@altium.net
+          </span>
+        </a>
+        <address class="text-center 2xl:text-left">
+          <p>Karlovačka cesta 24, Blato</p>
+          <p>10000 Zagreb,</p>
+          <p>Hrvatska</p>
+        </address>
+        <div class="flex gap-8 2xl:gap-4">
+          <a href="#" class="group">
+            <i class="fi fi-brands-instagram group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+          </a>
+          <a href="#" class="group">
+            <i class="fi fi-brands-twitter-alt group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+          </a>
+          <a href="#" class="group">
+            <i class="fi fi-brands-facebook group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+          </a>
+          <a href="#" class="group">
+            <i class="fi fi-brands-linkedin group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
+  </footer>
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+    <img class="select-none" src="images/hexagen.png" alt="brand" />
+    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <i class="fi fi-rs-arrow-small-up"></i>
+      Back to Top
+    </span>
+  </button>
+  <img class="absolute right-0 bottom-0 select-none -z-10" src="images/brand.png" alt="brand" />
 </body>
 
 </html>
