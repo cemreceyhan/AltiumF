@@ -4,12 +4,12 @@
       "id": 0,
       "title": "Products",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Analytical Equipment Group",
               "list": [
@@ -131,7 +131,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -253,7 +253,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -375,7 +375,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -499,12 +499,12 @@
       "id": 1,
       "title": "Industries & Applications",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Industries & Applications",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -626,7 +626,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -748,7 +748,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -870,7 +870,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -994,12 +994,12 @@
       "id": 2,
       "title": "Technologies",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Technologies",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Technologies",
               "list": [
@@ -1121,7 +1121,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1243,7 +1243,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1365,7 +1365,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1489,12 +1489,12 @@
       "id": 3,
       "title": "Services",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1616,7 +1616,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1738,7 +1738,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1860,7 +1860,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -1984,12 +1984,12 @@
       "id": 4,
       "title": "Corporate",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2111,7 +2111,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2233,7 +2233,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2355,7 +2355,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2479,12 +2479,12 @@
       "id": 5,
       "title": "Technical Support",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2606,7 +2606,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2728,7 +2728,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2850,7 +2850,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -2974,12 +2974,12 @@
       "id": 6,
       "title": "R&D",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3101,7 +3101,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3223,7 +3223,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3345,7 +3345,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3469,12 +3469,12 @@
       "id": 7,
       "title": "Events",
       "link": "events",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3596,7 +3596,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3718,7 +3718,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3840,7 +3840,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -3964,12 +3964,12 @@
       "id": 8,
       "title": "Contact",
       "link": "#",
-      "sideMenuList": [
+      "list": [
         {
           "id": 0,
           "title": "Analytical Equipment Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -4091,7 +4091,7 @@
           "id": 1,
           "title": "Lab Solutions And Chemicals Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -4213,7 +4213,7 @@
           "id": 2,
           "title": "Clinical and Life Sciences Group",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -4335,7 +4335,7 @@
           "id": 3,
           "title": "Jasem Clinic & Food Safety Kits",
 
-          "subMenu": [
+          "list": [
             {
               "title": "Gas Chromatography",
               "list": [
@@ -4454,6 +4454,11 @@
           ]
         }
       ]
+    },
+    {
+      "id": 55,
+      "title": "Products",
+      "link": "#"
     }
   ]
 }

@@ -9,16 +9,17 @@
   <meta name="keywords" content="" />
   <meta name="theme-color" content="#FFFFFF" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="js/events.js"></script>
+  <script type="module" src="js/image-slider.js"></script>
+  <script type="module" src="js/element-slider.js"></script>
   <script type="module" src="js/main.js"></script>
   <title>Altium</title>
 </head>
 
-<body class="space-y-12 relative">
+<body class="space-y-12 relative overflow-x-hidden">
   <header class="relative bg-light-100">
-    <div class="space-y-4 container min-h-56">
+    <!-- HEADER -->
+    <div class="space-y-4 container min-h-56 hidden 2xl:block">
       <nav id="header-bar"
         class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
         <!-- SEARCH -->
@@ -49,16 +50,16 @@
           <option value="en">United Kingdom</option>
         </select>
       </nav>
-      <div id="header-main" class="flex items-center justify-between px-4 py-6 text-primary font-medium">
+      <div id="header-main" class="hidden 2xl:flex items-center justify-between px-4 py-6 text-primary font-medium">
         <!-- LOGO -->
         <a href="/">
-          <img src="images/logo.png" alt="Vite" />
+          <img src="images/logo.png" alt="Altium" />
         </a>
         <!-- NAVIGATION -->
         <nav class="flex items-center gap-8 py-4">
         </nav>
         <button
-          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
           Altium Global
         </button>
         <button class="relative">
@@ -77,20 +78,50 @@
             </ul>
             <div class="space-y-4">
               <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
-                euismod pulvinar
-                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
-              <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
+                euismod pulvinar mi. Nunc, eget a nulla nunc mauris dictum. Cras id porttitor curabitur sed eu. Aliquet
+              </p>
+              <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                <div
+                  class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                </div>
+              </button>
             </div>
           </div>
-          <!-- MEGA SUB-->
           <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+            <!-- MEGA SUB -->
           </div>
         </div>
       </div>
+    </div>
+    <!-- MOBILE HEADER START -->
+    <div class="container flex items-center justify-between 2xl:hidden px-4 py-5">
+      <a href="/">
+        <img src="images/logo.png" alt="Altium" />
+      </a>
+      <button id="mobile-menu-button" class="w-12 h-12 relative z-[99999]">
+        <!-- burger menu -->
+        <div id="bar-1"
+          class="w-6 h-[2px] bg-primary absolute top-[22px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
+        <div id="bar-2"
+          class="w-6 h-[2px] bg-primary absolute top-[27px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
+        <div id="bar-3"
+          class="w-6 h-[2px] bg-primary absolute top-[32px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
+      </button>
+      <div data-mega-menu="closed" id="mobile-menu"
+        class="z-[9999] flex flex-col items-center justify-center fixed inset-0 right-0 w-full duration-500 min-h-screen bg-light-100 gap-8 text-white font-semibold overflow-auto translate-x-full">
+        <img src="images/logo.png" alt="Altium" />
+        <!-- MOBILE MENU ITEMS CREATED BY MAIN.JS -->
+      </div>
+    </div>
+    <!-- MOBILE HEADER END -->
   </header>
-  <main class="container space-y-14 pb-6">
+  <main class="container space-y-14 pb-6 px-4">
     <!-- OUR PARTNERS HEADER -->
     <header class="flex flex-col justify-between gap-5">
       <h1>Our Partners</h1>
@@ -170,56 +201,59 @@
       </div>
     </section>
   </main>
-  <footer class="container space-y-32 text-primary">
-    <div class="bg-light-200 rounded-[18px] grid grid-cols-4 py-[70px] px-10">
-      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
+  <footer class="container space-y-32 text-primary bg-light-200 rounded-[18px] py-[70px] px-10">
+    <div class="grid grid-cols-1 2xl:grid-cols-4 px-4 max-w-md 2xl:max-w-full mx-auto 2xl:mx-0">
+      <div
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <a class="" href="/">
           <img src="images/logo.png" alt="Altium" />
         </a>
         <p class="">Altium International d.o.o.</p>
       </div>
-      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
-        <h1 class="text-[32px]/[130%] font-extrabold">Who We Are</h1>
-        <ul class="space-y-5">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Partners</a></li>
-          <li><a href="#">Careers</a></li>
+      <div
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Who We Are</h1>
+        <ul class="space-y-4">
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Team</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Partners</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Careers</a></li>
         </ul>
       </div>
-      <div class="flex flex-col gap-9 border-r border-tertiary w-[90%]">
-        <h1 class="text-[32px]/[130%] font-extrabold">Product & Services</h1>
-        <ul class="space-y-5">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Partners</a></li>
-          <li><a href="#">Careers</a></li>
+      <div
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Product & Services</h1>
+        <ul class="space-y-4">
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Team</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Partners</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Careers</a></li>
         </ul>
       </div>
-      <div class="flex flex-col gap-9">
-        <h1 class="text-[32px]/[130%] font-extrabold">Contact</h1>
+      <div class="flex flex-col items-center 2xl:items-start justify-center gap-9 py-10 2xl:p-0">
+        <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Contact</h1>
         <a href="mailto:web.hr@altium.net">
           <span class="underline underline-offset-4">
             web.hr@altium.net
           </span>
         </a>
-        <address>
+        <address class="text-center 2xl:text-left">
           <p>Karlovačka cesta 24, Blato</p>
           <p>10000 Zagreb,</p>
           <p>Hrvatska</p>
         </address>
-        <div class="flex gap-4">
-          <a href="#">
-            <i class="fi fi-brands-instagram"></i>
+        <div class="flex gap-8 2xl:gap-4">
+          <a href="#" class="group">
+            <i class="fi fi-brands-instagram group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
-          <a href="#">
-            <i class="fi fi-brands-twitter-alt"></i>
+          <a href="#" class="group">
+            <i class="fi fi-brands-twitter-alt group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
-          <a href="#">
-            <i class="fi fi-brands-facebook"></i>
+          <a href="#" class="group">
+            <i class="fi fi-brands-facebook group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
-          <a href="#">
-            <i class="fi fi-brands-linkedin"></i>
+          <a href="#" class="group">
+            <i class="fi fi-brands-linkedin group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
         </div>
       </div>
@@ -233,7 +267,7 @@
       Back to Top
     </span>
   </button>
-  <img class="absolute right-0 bottom-0 select-none" src="images/brand.png" alt="brand" />
+  <img class="absolute right-0 bottom-0 select-none -z-10" src="images/brand.png" alt="brand" />
 </body>
 
 </html>

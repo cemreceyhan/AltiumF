@@ -198,7 +198,7 @@ const createProductElements = (container) => {
       'flex',
       'items-center',
       'justify-center',
-      'duration-300',
+      'duration-500',
       'hover:border-redish',
       'shrink-0',
       'h-[570px]',
@@ -246,7 +246,7 @@ const createProductElements = (container) => {
     img.src = item.src;
     img.alt = item.alt;
     img.classList.add(
-      'duration-300',
+      'duration-500',
       'group-hover:scale-110',
       'object-contain',
       'h-[300px]',
@@ -264,7 +264,7 @@ const createProductElements = (container) => {
       '-translate-y-1/2',
       'text-redish',
       'opacity-0',
-      'duration-300',
+      'duration-500',
       'group-hover:opacity-100',
     );
     element.appendChild(button);
@@ -291,6 +291,11 @@ const createEventElements = (container) => {
       'md:w-[387px]',
       'w-[calc(100%-1px)]',
       'shrink-0',
+      'group',
+      'duration-500',
+      'hover:border-redish',
+      'hover:bg-redish',
+      'hover:text-white',
     );
 
     let tag = document.createElement('div');
@@ -307,6 +312,9 @@ const createEventElements = (container) => {
       'rounded-lg',
       'text-redish',
       'border-redish',
+      'group-hover:border-white',
+      'group-hover:text-white',
+      'duration-500',
     );
     element.appendChild(tag);
 
@@ -317,6 +325,7 @@ const createEventElements = (container) => {
       'mt-[2px]',
       'rounded-full',
       'bg-redish',
+      'group-hover:bg-white',
     );
     tag.appendChild(tagIcon);
 
@@ -330,7 +339,7 @@ const createEventElements = (container) => {
 
     let title = document.createElement('h3');
     title.textContent = item.title;
-    title.classList.add('font-bold', 'w-5/6');
+    title.classList.add('font-bold', 'w-5/6', 'group-hover:text-white');
     element.appendChild(title);
 
     let imgContainer = document.createElement('div');
@@ -340,7 +349,9 @@ const createEventElements = (container) => {
       '-right-16',
       'top-0',
       '-translate-y-1/4',
-      '-z-10',
+      'z-10',
+      'group-hover:opacity-20',
+      'duration-500',
     );
     element.appendChild(imgContainer);
 
@@ -370,7 +381,7 @@ const createPartnerElements = (container) => {
       'flex',
       'items-center',
       'justify-center',
-      'duration-300',
+      'duration-500',
       'hover:border-redish',
       'shrink-0',
       'h-[200px]',
@@ -382,7 +393,7 @@ const createPartnerElements = (container) => {
     img.src = item.src;
     img.alt = item.alt;
     img.classList.add(
-      'duration-300',
+      'duration-500',
       'group-hover:scale-110',
       'object-contain',
       'h-[300px]',

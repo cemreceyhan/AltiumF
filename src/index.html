@@ -16,9 +16,9 @@
   <title>Altium</title>
 </head>
 
-<body class="space-y-12 relative">
+<body class="space-y-12 relative overflow-x-hidden">
   <header class="relative bg-light-100">
-    <!-- DESKTOP HEADER -->
+    <!-- HEADER -->
     <div class="space-y-4 container min-h-56 hidden 2xl:block">
       <nav id="header-bar"
         class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
@@ -59,7 +59,7 @@
         <nav class="flex items-center gap-8 py-4">
         </nav>
         <button
-          class="px-5 py-[.875rem] bg-redish hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
           Altium Global
         </button>
         <button class="relative">
@@ -78,28 +78,46 @@
             </ul>
             <div class="space-y-4">
               <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit vel turpis
-                euismod pulvinar
-                viverra ut lacus aliquet mi. In duis eu sed auctor,</p>
-              <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
+                euismod pulvinar mi. Nunc, eget a nulla nunc mauris dictum. Cras id porttitor curabitur sed eu. Aliquet
+              </p>
+              <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                <div
+                  class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                </div>
+              </button>
             </div>
           </div>
-          <!-- MEGA SUB-->
           <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+            <!-- MEGA SUB -->
           </div>
         </div>
       </div>
     </div>
-    <!-- DESKTOP HEADER END -->
     <!-- MOBILE HEADER START -->
     <div class="container flex items-center justify-between 2xl:hidden px-4 py-5">
       <a href="/">
         <img src="images/logo.png" alt="Altium" />
       </a>
-      <button id="menu" class="flex items-center justify-center w-12 h-12 rounded-[.625rem] text-primary font-semibold">
-        <i class="fi fi-sr-menu-burger text-xl"></i>
+      <button id="mobile-menu-button" class="w-12 h-12 relative z-[99999]">
+        <!-- burger menu -->
+        <div id="bar-1"
+          class="w-6 h-[2px] bg-primary absolute top-[22px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
+        <div id="bar-2"
+          class="w-6 h-[2px] bg-primary absolute top-[27px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
+        <div id="bar-3"
+          class="w-6 h-[2px] bg-primary absolute top-[32px] left-1/2 transform -translate-x-1/2 duration-500">
+        </div>
       </button>
+      <div data-mega-menu="closed" id="mobile-menu"
+        class="z-[9999] flex flex-col items-center justify-center fixed inset-0 right-0 w-full duration-500 min-h-screen bg-light-100 gap-8 text-white font-semibold overflow-auto translate-x-full">
+        <img src="images/logo.png" alt="Altium" />
+        <!-- MOBILE MENU ITEMS CREATED BY MAIN.JS -->
+      </div>
     </div>
     <!-- MOBILE HEADER END -->
   </header>
@@ -109,51 +127,55 @@
       <header class="flex flex-col gap-14 xl:gap-24 col-span-2 2xl:col-span-1 relative">
         <!-- CONTENT PREVIEW -->
         <div class="space-y-4">
-          <h1 class="text-[32px]/[130%] md:text-[36px]/[130%] 2xl:text-[44px]/[130%] 2xl:text-[64px]/[130%]">
+          <h1 class="text-[32px]/[130%] md:text-[36px]/[130%] xl:text-[44px]/[130%] 2xl:text-[64px]/[130%]">
             Solutions to Optimize Your Workflow
           </h1>
           <p>Gas chromatography (GC) helps scientists ensure the safety, quality, and purity of our food, air, water,
             and pharmaceuticals; determine the composition and consistency of fuels and chemicals; and test for
             controlled substances in criminal investigations and sporting competitions.
           </p>
-          <button
-            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish self-start">
+          <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
             Read More
+            <i
+              class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+            <div class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+            </div>
           </button>
+
         </div>
         <!-- SELECTABLE CONTENTS START -->
         <div class="roundedBox !space-y-0 gap-4 text-[14px]/[141%] text-primary !px-3 hidden 2xl:flex">
-          <button class="active group relative hover:text-redish duration-200 min-w-16">
+          <button class="active group relative hover:text-redish duration-500 min-w-16">
             Gas Chromatography
             <span
-              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+              class="opacity-100 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redish rounded-full duration-500"></span>
           </button>
           <div class="w-[1px] h-8 self-center bg-tertiary"></div>
-          <button class="group relative hover:text-redish duration-200 min-w-16">
+          <button class="group relative hover:text-redish duration-500 min-w-16">
             Confocal Microscope
             <span
-              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redish rounded-full duration-500"></span>
           </button>
           <div class="w-[1px] h-8 self-center bg-tertiary"></div>
-          <button class="group relative hover:text-redish duration-200 min-w-16">
+          <button class="group relative hover:text-redish duration-500 min-w-16">
             Gene
             Expression
             In a Single Cell
             <span
-              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redish rounded-full duration-500"></span>
           </button>
           <div class="w-[1px] h-8 self-center bg-tertiary"></div>
-          <button class="group relative hover:text-redish duration-200 min-w-16">
+          <button class="group relative hover:text-redish duration-500 min-w-16">
             LDIR
             <span
-              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redish rounded-full duration-500"></span>
           </button>
           <div class="w-[1px] h-8 self-center bg-tertiary"></div>
-          <button class="group relative hover:text-redish duration-200 min-w-16">
+          <button class="group relative hover:text-redish duration-500 min-w-16">
             2.5 Hexadione
             Amino Acid
             <span
-              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redishrounded-full duration-200"></span>
+              class="opacity-0 group-hover:opacity-100 absolute left-1/2 -bottom-3 w-2 h-2 bg-redish rounded-full duration-500"></span>
           </button>
         </div>
         <!-- SELECTABLE CONTENTS END -->
@@ -189,11 +211,11 @@
         </div>
         <div class="flex gap-5 absolute right-0 top-0">
           <button id="prev-featured"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
           </button>
           <button id="next-featured"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
           </button>
         </div>
@@ -215,9 +237,13 @@
             years.
             To achieve
             this, take a look at the solutions offered by Altium Technique.</p>
-          <button
-            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-            More</button>
+          <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+            Read More
+            <i
+              class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+            <div class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+            </div>
+          </button>
         </div>
         <img src="images/altium-tech.png" alt="Altium Tech Support" class="w-56 h-48 object-cover hidden 2xl:flex" />
       </div>
@@ -227,9 +253,13 @@
         class="row-span-2 2xl:py-16 2xl:pl-10 2xl:border-l border-b 2xl:border-b-0 border-tertiary 2xl:space-y-14 space-y-0 pt-10 order-2 2xl:order-none">
         <div class="flex justify-between items-center">
           <h2 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">News & Announcements</h2>
-          <button
-            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">See
-            All</button>
+          <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+            See All
+            <i
+              class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+            <div class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+            </div>
+          </button>
         </div>
         <div class="flex flex-col divide-tertiary divide-y text-primary">
           <div class="flex items-start gap-12 py-8">
@@ -238,9 +268,14 @@
               <h3 class="font-semibold">WELCOME PHI !!!</h3>
               <p class="w-5/6">Here is the note from our CEO, Goran Dubravcic: “PHI and Altium share the same vision
                 that regenerative medicine...</p>
-              <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
+              <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                <div
+                  class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                </div>
+              </button>
             </div>
           </div>
           <div class="px-5 2xl:px-0 py-8 font-semibold">
@@ -262,65 +297,68 @@
         <div class="flex flex-col items-start gap-5">
           <h2 class="2xl:text-[40px]/[130%] text-[20px]/[130%] font-extrabold">A Sustainable Future</h2>
           <p class="2xl:w-5/6">At Altium we are committed to conducting our business in a socially, environmentally, and
-            economically responsible manner...</p>
-          <button
-            class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-            More</button>
+            economically responsible manner. We are dedicated to improving the quality of life for our employees,
+            customers, and communities.</p>
+          <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+            Read More
+            <i
+              class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+            <div class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+            </div>
+          </button>
         </div>
-        <img src="images/future.jpeg" alt="Sustainable Future" class="w-56 object-cover rounded-2xl hidden 2xl:flex" />
-      </div>
-      <!-- ROW SPAN 1: A SUSTAINABLE FUTURE END -->
+        <!-- ROW SPAN 1: A SUSTAINABLE FUTURE END -->
     </section>
     <!-- FEATURES END -->
     <!-- SECTORS START -->
     <section class="container grid 2xl:grid-cols-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-sr-hand-holding-heart text-[42px]"></i>
         <span>Health</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-sr-wheat text-[42px]"></i>
         <span>Food</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-ss-tshirt text-[42px]"></i>
         <span>Textile</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-rr-fingerprint text-[42px]"></i>
         <span>Forensic Science</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-ss-raindrops text-[42px]"></i>
         <span>Energy & Petrochemistry</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-rr-pickaxe text-[42px]"></i>
         <span>Mining & Material Science</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-rr-flask text-[42px]"></i>
         <span>Chemicals</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-rr-dna text-[42px]"></i>
         <span>Genetics</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-sr-capsules text-[42px]"></i>
         <span>Pharmaceutical</span>
       </button>
       <button
-        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-300 gap-5">
+        class="flex flex-col items-center justify-center bg-light-200 px-2 text-primary h-[150px] hover:bg-redish rounded-[10px] hover:text-white font-semibold text-xs duration-500 gap-5">
         <i class="fi fi-sr-leaf text-[42px]"></i>
         <span>Environmental</span>
       </button>
@@ -340,11 +378,11 @@
         </div>
         <div class="flex 2xl:hidden gap-5 absolute right-0 top-0">
           <button id="prev-partners"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
           </button>
           <button id="next-partners"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
           </button>
         </div>
@@ -459,11 +497,11 @@
         </div>
         <div class="flex gap-5 absolute right-0 top-0">
           <button id="prev-events"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-left mt-2 text-2xl"></i>
           </button>
           <button id="next-events"
-            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-tertborder-tertiary hover:bg-redish hover:text-white hover:border-redish text-center flex items-center justify-center">
+            class="border-tertiary border 2xl:w-20 2xl:h-20 w-10 h-10 rounded-full text-primary hover:bg-redish hover:text-white duration-500 hover:border-redish text-center flex items-center justify-center">
             <i class="fi fi-ts-angle-small-right mt-2 text-2xl"></i>
           </button>
         </div>
@@ -483,101 +521,140 @@
             content we create as a guide!
           </p>
         </div>
-        <button
-          class="pb-1 shrink-0 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish self-start">
+        <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
           See All
+          <i
+            class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+          <div class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+          </div>
         </button>
       </header>
       <div class="grid 2xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 w-full gap-6">
-        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
-          <img src="images/blog/1.jpeg" alt="blog/1" class="object-cover h-1/2 w-full" />
-          <div class="px-[38px] py-[43px] space-y-8">
-            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden
+        hover:bg-redish transition-all duration-500 group
+        ">
+          <img src="images/blog/1.jpeg" alt="blog/1" class="object-cover h-[46%] w-full" />
+          <div class="px-9 py-10 space-y-4 xl:space-y-6 2xl:space-y-8">
+            <h3 class="font-extrabold group-hover:text-white">Pellentesque blandit sit volutpat faucibus. Tellus amet.
             </h3>
-            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <p class="group-hover:text-white">Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio
+              est.</p>
             <div class="flex items-center justify-between">
               <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
-              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                class="pb-1 shrink-0 text-redish group-hover:text-white font-normal relative self-start group/button">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover/button:opacity-100 group-hover/button:-right-7 group-hover:text-white opacity-0 duration-500"></i>
+                <div
+                  class="absolute group-hover:bg-white duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover/button:w-[calc(100%+23px)]">
+                </div>
+              </button>
+              <span class="text-primary group-hover:text-white text-[14px]/[141%]">19 Jan 2024</span>
             </div>
           </div>
         </article>
-        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
-          <img src="images/blog/2.jpeg" alt="blog/2" class="object-cover h-1/2 w-full" />
-          <div class="px-[38px] py-[43px] space-y-8">
-            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden
+        hover:bg-redish transition-all duration-500 group
+        ">
+          <img src="images/blog/2.jpeg" alt="blog/2" class="object-cover h-[46%] w-full" />
+          <div class="px-9 py-10 space-y-4 xl:space-y-6 2xl:space-y-8">
+            <h3 class="font-extrabold group-hover:text-white">Pellentesque blandit sit volutpat faucibus. Tellus amet.
             </h3>
-            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <p class="group-hover:text-white">Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio
+              est.</p>
             <div class="flex items-center justify-between">
               <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
-              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                class="pb-1 shrink-0 text-redish group-hover:text-white font-normal relative self-start group/button">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover/button:opacity-100 group-hover/button:-right-7 group-hover:text-white opacity-0 duration-500"></i>
+                <div
+                  class="absolute group-hover:bg-white duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover/button:w-[calc(100%+23px)]">
+                </div>
+              </button>
+              <span class="text-primary group-hover:text-white text-[14px]/[141%]">19 Jan 2024</span>
             </div>
           </div>
         </article>
-        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
-          <img src="images/blog/3.jpeg" alt="blog/3" class="object-cover h-1/2 w-full" />
-          <div class="px-[38px] py-[43px] space-y-8">
-            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden
+        hover:bg-redish transition-all duration-500 group
+        ">
+          <img src="images/blog/3.jpeg" alt="blog/3" class="object-cover h-[46%] w-full" />
+          <div class="px-9 py-10 space-y-4 xl:space-y-6 2xl:space-y-8">
+            <h3 class="font-extrabold group-hover:text-white">Pellentesque blandit sit volutpat faucibus. Tellus amet.
             </h3>
-            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <p class="group-hover:text-white">Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio
+              est.</p>
             <div class="flex items-center justify-between">
               <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
-              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                class="pb-1 shrink-0 text-redish group-hover:text-white font-normal relative self-start group/button">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover/button:opacity-100 group-hover/button:-right-7 group-hover:text-white opacity-0 duration-500"></i>
+                <div
+                  class="absolute group-hover:bg-white duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover/button:w-[calc(100%+23px)]">
+                </div>
+              </button>
+              <span class="text-primary group-hover:text-white text-[14px]/[141%]">19 Jan 2024</span>
             </div>
           </div>
         </article>
-        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden">
-          <img src="images/blog/4.jpeg" alt="blog/4" class="object-cover h-1/2 w-full" />
-          <div class="px-[38px] py-[43px] space-y-8">
-            <h3 class="font-extrabold">Pellentesque blandit sit volutpat faucibus. Tellus amet.
+        <article class="rounded-[18px] border border-tertiary h-[600px] col-span-1 overflow-hidden
+        hover:bg-redish transition-all duration-500 group
+        ">
+          <img src="images/blog/4.jpeg" alt="blog/4" class="object-cover h-[46%] w-full" />
+          <div class="px-9 py-10 space-y-4 xl:space-y-6 2xl:space-y-8">
+            <h3 class="font-extrabold group-hover:text-white">Pellentesque blandit sit volutpat faucibus. Tellus amet.
             </h3>
-            <p>Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio est.</p>
+            <p class="group-hover:text-white">Purus netus turpis nisl bibendum ullamcorper sed rhoncus scelerisque. Odio
+              est.</p>
             <div class="flex items-center justify-between">
               <button
-                class="pb-1 text-redish hover:text-primary hover:border-primary font-normal border-b border-redish">Read
-                More</button>
-              <span class="text-primary text-[14px]/[141%]">19 Jan 2024</span>
+                class="pb-1 shrink-0 text-redish group-hover:text-white font-normal relative self-start group/button">
+                Read More
+                <i
+                  class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover/button:opacity-100 group-hover/button:-right-7 group-hover:text-white opacity-0 duration-500"></i>
+                <div
+                  class="absolute group-hover:bg-white duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover/button:w-[calc(100%+23px)]">
+                </div>
+              </button>
+              <span class="text-primary group-hover:text-white text-[14px]/[141%]">19 Jan 2024</span>
             </div>
           </div>
         </article>
       </div>
     </section>
   </main>
-  <footer class="container space-y-32 text-primary px-4">
-    <div class="bg-light-200 rounded-[18px] grid grid-cols-1 2xl:grid-cols-4 py-[70px] px-10">
+  <footer class="container space-y-32 text-primary bg-light-200 rounded-[18px] py-[70px] px-10">
+    <div class="grid grid-cols-1 2xl:grid-cols-4 px-4 max-w-md 2xl:max-w-full mx-auto 2xl:mx-0">
       <div
-        class="flex flex-col items-center justify-center gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <a class="" href="/">
           <img src="images/logo.png" alt="Altium" />
         </a>
         <p class="">Altium International d.o.o.</p>
       </div>
       <div
-        class="flex flex-col items-center justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Who We Are</h1>
-        <ul class="space-y-5">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Partners</a></li>
-          <li><a href="#">Careers</a></li>
+        <ul class="space-y-4">
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Team</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Partners</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Careers</a></li>
         </ul>
       </div>
       <div
-        class="flex flex-col items-center justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Product & Services</h1>
-        <ul class="space-y-5">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Partners</a></li>
-          <li><a href="#">Careers</a></li>
+        <ul class="space-y-4">
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Team</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Our Partners</a></li>
+          <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Careers</a></li>
         </ul>
       </div>
-      <div class="flex flex-col items-center justify-center gap-9 py-10 2xl:p-0">
+      <div class="flex flex-col items-center 2xl:items-start justify-center gap-9 py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Contact</h1>
         <a href="mailto:web.hr@altium.net">
           <span class="underline underline-offset-4">
@@ -591,16 +668,16 @@
         </address>
         <div class="flex gap-8 2xl:gap-4">
           <a href="#" class="group">
-            <i class="fi fi-brands-instagram group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+            <i class="fi fi-brands-instagram group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
           <a href="#" class="group">
-            <i class="fi fi-brands-twitter-alt group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+            <i class="fi fi-brands-twitter-alt group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
           <a href="#" class="group">
-            <i class="fi fi-brands-facebook group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+            <i class="fi fi-brands-facebook group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
           <a href="#" class="group">
-            <i class="fi fi-brands-linkedin group-hover:text-redish duration-300 text-2xl 2xl:text-base"></i>
+            <i class="fi fi-brands-linkedin group-hover:text-redish duration-500 text-2xl 2xl:text-base"></i>
           </a>
         </div>
       </div>

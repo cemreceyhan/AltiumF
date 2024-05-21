@@ -5,6 +5,7 @@ const megaMenu = document.getElementById('mega-menu');
 const megaMenuSub = document.getElementById('mega-sub');
 const megaMenuSide = document.getElementById('mega-side');
 const toUpButton = document.getElementById('to-up');
+const body = document.querySelector('body');
 
 const currentRoute = window.location.pathname.split('/').pop();
 
@@ -58,15 +59,16 @@ const createSubMenu = (subSubItem) => {
   div.appendChild(ul);
   return div;
 };
-
 navList.forEach((item) => {
   const navItem = createNavItem(item);
 
   let timeoutId;
   navItem.addEventListener('mouseover', () => {
     clearTimeout(timeoutId);
-    megaMenu.classList.add('animate-fade-in-down');
-    megaMenu.classList.remove('animate-fade-out-up', 'hidden');
+    if (item.list) {
+      megaMenu.classList.add('animate-fade-in-down');
+      megaMenu.classList.remove('animate-fade-out-up', 'hidden');
+    }
   });
 
   megaMenu.addEventListener('mouseleave', () => {
@@ -80,19 +82,27 @@ navList.forEach((item) => {
 
   navItem.addEventListener('mouseover', () => {
     megaMenuSide.innerHTML = '';
-    item.sideMenuList.forEach((subItem) => {
-      const li = createSideMenuItem(subItem);
-      megaMenuSide.appendChild(li);
+    if (item.list) {
+      item.list.forEach((subItem) => {
+        const li = createSideMenuItem(subItem);
+        megaMenuSide.appendChild(li);
 
-      li.addEventListener('mouseover', () => {
-        megaMenuSub.innerHTML = '';
-        subItem.subMenu.forEach((subSubItem) => {
-          const div = createSubMenu(subSubItem);
-          megaMenuSub.appendChild(div);
+        li.addEventListener('mouseover', () => {
+          megaMenuSub.innerHTML = '';
+          subItem.list.forEach((subSubItem) => {
+            const div = createSubMenu(subSubItem);
+            megaMenuSub.appendChild(div);
+          });
         });
       });
-    });
+    }
   });
+
+  if (!item.list) {
+    navItem.addEventListener('mouseover', () => {
+      megaMenu.classList.add('hidden');
+    });
+  }
 });
 
 // MEGA MENU SECTION END
@@ -111,3 +121,140 @@ window.addEventListener('scroll', () => {
     toUpButton.classList.add('hidden');
   }
 });
+
+// MOBILE MENU SECTION START
+
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const bar1 = document.getElementById('bar-1');
+const bar2 = document.getElementById('bar-2');
+const bar3 = document.getElementById('bar-3');
+
+mobileMenuButton.addEventListener('click', () => {
+  if (mobileMenu.dataset.megaMenu === 'closed') {
+    mobileMenu.dataset.megaMenu = 'open';
+    mobileMenu.classList.remove('translate-x-full');
+    mobileMenu.classList.add('translate-x-0');
+    body.classList.add('overflow-hidden');
+    bar1.classList.add(
+      'transform',
+      'rotate-[50deg]',
+      'translate-y-[5px]',
+      'bg-primary',
+    );
+    bar2.classList.add('opacity-0');
+    bar3.classList.add(
+      'transform',
+      '-rotate-[50deg]',
+      '-translate-y-[5px]',
+      'bg-primary',
+    );
+  } else {
+    mobileMenu.dataset.megaMenu = 'closed';
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    body.classList.remove('overflow-hidden');
+    bar1.classList.remove('transform', 'rotate-[50deg]', 'translate-y-[5px]');
+    bar2.classList.remove('opacity-0');
+    bar3.classList.remove('transform', '-rotate-[50deg]', '-translate-y-[5px]');
+  }
+
+  const openTabs = mobileMenu.querySelectorAll('.sub-ul:not(.hidden)');
+  openTabs.forEach((tab) => {
+    tab.classList.add('hidden');
+    const icon = tab.previousSibling.querySelector('i');
+    icon.classList.remove('fi-ts-angle-small-up');
+    icon.classList.add('fi-ts-angle-small-down');
+  });
+});
+
+const createMobileMenu = (list) => {
+  const ul = document.createElement('ul');
+  ul.classList.add('overflow-y-auto');
+  list.forEach((item) => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = item.link || '#';
+    a.textContent = item.title;
+    a.classList.add(
+      'text-primary',
+      'hover:cursor-pointer',
+      'flex',
+      'items-center',
+      'py-2',
+      'px-1',
+      'border-b',
+      'hover:border-tertiary',
+      'hover:bg-light-200/60',
+      'hover:duration-500',
+    );
+    const i = document.createElement('i');
+    i.classList.add(
+      'fi',
+      'fi-ts-angle-small-down',
+      'text-primary',
+      'text-xl',
+      'ml-2',
+      '-rotate-90',
+    );
+    if (!item.list) {
+      a.appendChild(i);
+    }
+    li.appendChild(a);
+    if (item.list) {
+      a.classList.add(
+        'text-primary',
+        'hover:cursor-pointer',
+        'flex',
+        'items-center',
+        'py-2',
+        'px-1',
+        'border-b',
+        'hover:border-tertiary',
+        'hover:bg-light-200/60',
+        'hover:duration-500',
+      );
+      const i = document.createElement('i');
+      i.classList.add(
+        'fi',
+        'fi-ts-angle-small-down',
+        'text-primary',
+        'text-xl',
+        'ml-2',
+        'mt-1',
+      );
+      a.appendChild(i);
+      const subUl = createMobileMenu(item.list);
+      subUl.classList.add('hidden');
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const openTabs = ul.querySelectorAll('.sub-ul:not(.hidden)');
+        openTabs.forEach((tab) => {
+          if (tab !== subUl) {
+            tab.classList.add('hidden');
+            const icon = tab.previousSibling.querySelector('i');
+            icon.classList.remove('fi-ts-angle-small-up');
+            icon.classList.add('fi-ts-angle-small-down');
+          }
+        });
+        if (subUl.classList.contains('hidden')) {
+          subUl.classList.remove('hidden');
+          i.classList.remove('fi-ts-angle-small-down');
+          i.classList.add('fi-ts-angle-small-up');
+        } else {
+          subUl.classList.add('hidden');
+          i.classList.remove('fi-ts-angle-small-up');
+          i.classList.add('fi-ts-angle-small-down');
+        }
+      });
+      subUl.classList.add('sub-ul');
+      li.appendChild(subUl);
+    }
+    ul.appendChild(li);
+  });
+  ul.classList.add('pl-4');
+  return ul;
+};
+
+const mobileMenuList = createMobileMenu(navList);
+mobileMenu.appendChild(mobileMenuList);

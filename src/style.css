@@ -62,7 +62,7 @@ button {
 }
 
 .active-event {
-  @apply h-4 w-4 animate-pulse rounded-full bg-secondary;
+  @apply h-4 w-4 shrink-0 animate-pulse rounded-full bg-secondary;
 }
 
 .megaMenu {
@@ -70,7 +70,7 @@ button {
 }
 
 .calendar-container {
-  @apply hidden h-[430px] w-full max-w-[524px] self-start rounded-[10px] border border-tertiary xl:block;
+  @apply hidden h-[430px] w-full max-w-[500px] self-start rounded-[10px] border border-tertiary xl:block;
 }
 
 .vanilla-calendar-wrapper {
@@ -101,19 +101,19 @@ button {
 }
 
 .outlinedButton {
-  @apply h-[55px] border border-redish font-medium text-redish duration-200 hover:bg-redish hover:text-white;
+  @apply h-[55px] border border-redish font-medium text-redish duration-500 hover:bg-redish hover:text-white;
 }
 
 .filledButton {
-  @apply h-[55px] bg-redish font-medium text-white duration-200 hover:bg-redish-100/80;
+  @apply h-[55px] bg-redish font-medium text-white duration-500 hover:bg-redish-100/80;
 }
 
 .blogListItem {
-  @apply rounded-[5px] border border-redish px-[15px] py-[5px] text-redish;
+  @apply rounded-[5px] border border-redish px-[15px] py-[5px] text-redish duration-500 hover:bg-redish hover:text-white;
 }
 
 .aboutUsMenuItem {
-  @apply rounded-[10px] border border-light-200 bg-light-200 px-[20px] py-[14px] text-[16px]/[130%] text-primary  duration-200 hover:border-redish hover:bg-redish hover:text-white;
+  @apply rounded-[10px] border border-light-200 bg-light-200 px-[20px] py-[14px] text-[16px]/[130%] text-primary  duration-500 hover:border-redish hover:bg-redish hover:text-white;
 }
 
 .aboutUsMenuItemActive {
