@@ -62,11 +62,106 @@
           class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
           Altium Global
         </button>
-        <button class="relative">
+        <button id="basket" class="relative">
           <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
           <span
             class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
         </button>
+        <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="basket-modal">
+          <div class="absolute top-0 right-0 flex flex-col bg-white divide-y divide-tertiary">
+            <div class="flex items-center justify-between px-16 py-4">
+              <h2 class="text-primary font-semibold px-4 py-6">Get a Quote</h2>
+              <button id="close-basket" class="size-14 bg-redish flex items-center justify-center rounded-full">
+                <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+              </button>
+            </div>
+            <div class="px-16 py-4 flex gap-14 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-16 py-4 flex gap-14 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-16 py-4 flex gap-14 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-16 py-4 flex gap-14 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="pt-36 px-16 pb-14">
+              <p class="text-[14px] text-center">Fill out the offer form by clicking the button below. </br> Our experts
+                will
+                contact you as soon as possible.</p>
+              <button
+                class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white w-full mt-4">
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- MEGA MENU -->
       <div id="mega-menu" class="megaMenu hidden">
@@ -120,6 +215,36 @@
       </div>
     </div>
     <!-- MOBILE HEADER END -->
+
+    <!-- WELCOME TO ALTIUM START -->
+    <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="welcome-modal">
+      <div
+        class="flex-col gap-6 absolute left-1/2 lg:top-20 top-5 -translate-x-1/2 flex items-center justify-center px-2 lg:px-24 py-14 rounded-[18px] bg-white w-[90%] h-[90%] lg:size-[680px]">
+        <button id="close-button"
+          class="size-14 bg-redish flex items-center justify-center rounded-full absolute right-4 top-4">
+          <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+        </button>
+        <img src="images/logo.png" alt="Altium" />
+        <h2 class="lg:text-[32px] text-2xl font-normal text-center">Welcome to Altium</h2>
+        <p class="text-center text-balance">In order to access Altium products and services, we kindly ask you to select
+          the country
+          you want to receive
+          service from.</p>
+        <select class="w-full disabled:text-light-100 selectBox" name="people" id="people">
+          <option value="" selected>Please select your country</option>
+          <option value="hr">Croatia</option>
+          <option value="en">United Kingdom</option>
+        </select>
+        <div class="w-3/4 h-[1px] my-6 bg-tertiary"></div>
+        <p class="text-center">Instead, to go to the Altium Global page, where you can get information
+          about Altium in addition to the products and services we offer in countries;</p>
+        <button
+          class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+          Altium Global
+        </button>
+      </div>
+    </div>
+    <!-- WELCOME TO ALTIUM END -->
   </header>
   <main class="container space-y-14 pb-6 px-4">
     <!-- ABOUT US HEADER -->

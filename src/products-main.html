@@ -10,8 +10,9 @@
   <meta name="theme-color" content="#FFFFFF" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="js/image-slider.js"></script>
-  <script type="module" src="js/element-slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.1/simple-scrollspy.min.js"
+    integrity="sha512-NNb5TgmE+7PHedvAWwPKZ/ukCGJciTHZ23ghPriEeEfcGySDBm9zIrjaXp/WNAUcVYhi5XhJ1rHveDKR35CInw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="js/main.js"></script>
   <title>Altium</title>
 </head>
@@ -196,20 +197,128 @@
       <a href="/">
         <img src="images/logo.png" alt="Altium" />
       </a>
-      <button id="mobile-menu-button" class="w-12 h-12 relative z-[99999]">
-        <!-- burger menu -->
-        <div id="bar-1"
-          class="w-6 h-[2px] bg-primary absolute top-[22px] left-1/2 transform -translate-x-1/2 duration-500">
+      <div class="flex items-center gap-4">
+        <!-- BASKET BUTTON -->
+        <button id="basket-mobile" class="relative z-[99999] mt-3">
+          <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </button>
+        <!-- BURGER MENU -->
+        <button id="mobile-menu-button" class="w-12 h-12 relative z-[99999]">
+          <div id="bar-1"
+            class="w-6 h-[2px] bg-primary absolute top-[22px] left-1/2 transform -translate-x-1/2 duration-500">
+          </div>
+          <div id="bar-2"
+            class="w-6 h-[2px] bg-primary absolute top-[27px] left-1/2 transform -translate-x-1/2 duration-500">
+          </div>
+          <div id="bar-3"
+            class="w-6 h-[2px] bg-primary absolute top-[32px] left-1/2 transform -translate-x-1/2 duration-500">
+          </div>
+        </button>
+      </div>
+      <!-- BASKET AREA MOBILE -->
+      <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="basket-modal-mobile">
+        <div class="absolute top-0 right-0 flex flex-col bg-white divide-y divide-tertiary h-full">
+          <div class="flex items-center justify-between px-4 py-4">
+            <h2 class="text-primary text-2xl font-semibold px-2 py-6">Get a Quote</h2>
+            <button id="close-basket-mobile"
+              class="size-10 bg-redish flex items-center shrink-0 justify-center rounded-full">
+              <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+            </button>
+          </div>
+          <!-- BASKET LIST -->
+          <div class="h-full overflow-y-scroll divide-y divide-tertiary">
+            <div class="px-6 py-4 flex gap-6 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-6 py-4 flex gap-6 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-6 py-4 flex gap-6 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="px-6 py-4 flex gap-6 items-center justify-between">
+              <img src="images/brands/products/1.png" alt="Altium Tech Support" class="w-12 h-12 object-cover" />
+              <div>
+                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                <button class="text-redish font-normal relative self-start group mt-3">
+                  Go To Product
+                  <i
+                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                  <div
+                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                  </div>
+                </button>
+              </div>
+              <button
+                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+              </button>
+            </div>
+            <div class="pt-12 px-16 pb-14">
+              <p class="text-[14px] text-center">Fill out the offer form by clicking the button below. </br> Our experts
+                will
+                contact you as soon as possible.</p>
+              <button
+                class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white w-full mt-4">
+                Get a Quote
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="bar-2"
-          class="w-6 h-[2px] bg-primary absolute top-[27px] left-1/2 transform -translate-x-1/2 duration-500">
-        </div>
-        <div id="bar-3"
-          class="w-6 h-[2px] bg-primary absolute top-[32px] left-1/2 transform -translate-x-1/2 duration-500">
-        </div>
-      </button>
+      </div>
       <div data-mega-menu="closed" id="mobile-menu"
-        class="z-[9999] flex flex-col items-center justify-center fixed inset-0 right-0 w-full duration-500 min-h-screen bg-light-100 gap-8 text-white font-semibold overflow-auto translate-x-full">
+        class="z-[9999] flex flex-col items-start sm:items-center p-4 justify-center fixed inset-0 right-0 w-full duration-500 min-h-screen bg-light-100 gap-8 text-white font-semibold overflow-auto translate-x-full">
         <img src="images/logo.png" alt="Altium" />
         <!-- MOBILE MENU ITEMS CREATED BY MAIN.JS -->
       </div>
@@ -246,161 +355,134 @@
     </div>
     <!-- WELCOME TO ALTIUM END -->
   </header>
-  <main class="container space-y-14 pb-6 px-4">
-    <!-- ABOUT US AREA -->
-    <nav class="flex flex-col items-center justify-center gap-9 pt-6">
-      <!-- ABOUT US CATEGORY LIST -->
-      <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[10px]">
-        <a class="aboutUsMenuItem aboutUsMenuItemActive text-center" href="#">About Us</a>
-        <a class="aboutUsMenuItem text-center" href="#">Core Values</a>
-        <a class="aboutUsMenuItem text-center" href="#">History</a>
-        <a class="aboutUsMenuItem text-center" href="#">Our People</a>
-        <a class="aboutUsMenuItem text-center" href="#">Sustainability</a>
-      </ul>
-    </nav>
-    <!-- HISTORY CONTENT -->
-    <section class="flex items-center justify-center relative">
-      <div class="text-primary">
-        <div class="hidden sm:block w-[1px] bg-light-200 absolute h-full left-1/2 transform -translate-x-1/2"></div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">1988</span>
+  <main class="pb-6 px-4 divide-y divide-tertiary">
+    <div class="container grid grid-cols-12">
+      <section id="general-information" class="col-span-8 border-r border-tertiary">
+        <article class="max-w-[85%] space-y-4 pb-10">
+          <h1 data-scroll-spy="0">Gas Chromatography</h1>
+          <p>Gas chromatography (GC) helps scientists ensure the safety, quality, and purity of our food, air, water,
+            and
+            pharmaceuticals; determine the composition and consistency of fuels and chemicals; and test for controlled
+            substances in criminal investigations and sporting competitions.</p>
+          <br />
+          <p>Agilent gas chromatography systems combine innovative technology, Instrument Intelligence, and legendary
+            reliability to meet the needs of analytical testing and research laboratories across a broad range of
+            applications, such as environmental, food safety, forensics, energy & chemicals, and more. Integrated
+            Instrument
+            Intelligence helps avoid GC problems before they affect chromatographic performance to optimize uptime, cost
+            of
+            ownership, and confidence in results.v</p>
+        </article>
+      </section>
+      <aside class="col-span-4 px-11">
+        <img src="images/blog/1.jpeg" alt="Altium Tech Support"
+          class="w-full object-cover rounded-[18px] overflow-hidden" />
+      </aside>
+    </div>
+    <div class="container grid grid-cols-12">
+      <section id="scroll-spy-container" class="col-span-8 border-r border-tertiary divide-y divide-tertiary">
+        <div class="divide-y divide-tertiary">
+          <h2 data-scroll-spy="1" class="py-10">Product Categories</h2>
+          <!-- HAS ONE COLUMN -->
+          <div class="py-10">
+            <h3 class="text-[20px] font-semibold">GC Systems</h3>
+            <p>The Right Gas Chromatography (GC) System is Here</p>
+          </div>
+          <!-- HAS TWO COLUMN -->
+          <div class="grid grid-cols-2">
+            <div class="flex flex-col items-start justify-center py-10">
+              <h3 class="text-[20px] font-semibold">GC Analyzers</h3>
+              <p>GC Analyzers Deliver Proven Results for Your Lab</p>
             </div>
-            <div class="flex justify-start w-full mx-auto items-center p-4">
-              SEM LAB established to sell consumables and provide application & hardware support for Agilent (HP) and
-              other manufacturers’ instruments.
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <div class="p-9 bg-light-200 flex items-center text-[#1483B0]">
+              Energy & Chemical GC Analyzers | Gas Impurities Measurements GC Analyzers | Dissolved Gas GC Analyzer |
+              Environmental GC Analyzers | Forensic GC Analyzers | Pharmaceutical GC Analyzers
             </div>
           </div>
-        </div>
-
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
-              SEM LAB appointed Agilent (HP) distributor for Turkey.
+          <!-- HAS ONE COLUMN -->
+          <div class="py-10">
+            <h3 class="text-[20px] font-semibold">GC, GC/MS Technologies </h3>
+            <p>Capillary Flow Technology, Advanced GC and GC/MS Technology Give Flexibility</p>
+          </div>
+          <!-- HAS ONE COLUMN -->
+          <div class="py-10">
+            <h3 class="text-[20px] font-semibold">GC Systems</h3>
+            <p>The Right Gas Chromatography (GC) System is Here</p>
+          </div>
+          <!-- HAS ONE COLUMN -->
+          <div class="py-10">
+            <h3 class="text-[20px] font-semibold">GC Systems</h3>
+            <p>The Right Gas Chromatography (GC) System is Here</p>
+          </div>
+          <!-- HAS TWO COLUMN -->
+          <div class="grid grid-cols-2">
+            <div class="flex flex-col items-start justify-center py-10">
+              <h3 class="text-[20px] font-semibold">GC Supplies & Consumables</h3>
+              <p>Agilent Gas Chromatography Supplies & Consumables</p>
             </div>
-            <div class="flex justify-start w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">1990</span>
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <div class="p-9 bg-light-200 flex items-center text-[#1483B0]">
+              Best Selling Gas Chromatography Supplies | Inlet Liners for Gas Chromatography | Ferrules & Connectors for
+              Gas Chromatography | Autosampler & Sample Introduction Supplies for GC | Inlet Septa for Gas
+              Chromatography | Gas Chromatography Capillary Tubing & Accessories | Detector Parts & Accessories for Gas
+              Chromatography | Gas Chromatography Inlet Accessories | Intuvo Supplies
             </div>
           </div>
-        </div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">1997</span>
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center p-4">
-              Altium established to participate in Turkish Government tenders.
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
+          <!-- HAS ONE COLUMN -->
+          <div class="py-10">
+            <h3 class="text-[20px] font-semibold">GC Systems</h3>
+            <p>The Right Gas Chromatography (GC) System is Here</p>
           </div>
         </div>
-
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
-              Ege Analiz established to provide contract laboratory services
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">1997</span>
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
+        <div class="py-10 pr-10 space-y-4">
+          <h2 data-scroll-spy="2">Application Areas of Gas Chromatography</h2>
+          <p>
+            Elit et facilisis pellentesque et. Facilisis non facilisi eget sem semper ante. Duis et bibendum sit massa
+            accumsan. Lacus massa posuere nisl tortor lectus eget pretium gravida faucibus. Elementum sagittis vulputate
+            tellus quis lectus a
+          </p>
+          <ul class="list-disc text-primary pl-20">
+            <li class="py-2">Food & Beverage</li>
+            <li class="py-2">Environmental</li>
+            <li class="py-2">Pharmaceutical</li>
+            <li class="py-2">Energy & Chemicals</li>
+            <li class="py-2">Forensics</li>
+          </ul>
         </div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2000</span>
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center p-4">
-              HPST established to replace former Agilent subsidiary covering Czech Republic.
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
+        <div class="py-10 pr-10 space-y-4">
+          <h2 data-scroll-spy="3">Advantages of Gas Chromatography</h2>
+          <p>
+            Elit et facilisis pellentesque et. Facilisis non facilisi eget sem semper ante. Duis et bibendum sit massa
+            accumsan. Lacus massa posuere nisl tortor lectus eget pretium gravida faucibus. Elementum sagittis vulputate
+            tellus quis lectus a
+          </p>
+          <ul class="list-disc text-primary pl-20">
+            <li class="py-2">Food & Beverage</li>
+            <li class="py-2">Environmental</li>
+            <li class="py-2">Pharmaceutical</li>
+            <li class="py-2">Energy & Chemicals</li>
+            <li class="py-2">Forensics</li>
+          </ul>
         </div>
-
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
-              Altium established to participate in Turkish Government tenders.
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2002</span>
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
-        </div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2008</span>
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center p-4">
-              HPST established to replace former Agilent subsidiary covering Czech Republic.
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
-              AlphaChrom established to replace failing former distributor covering Croatia, Bosnia & Herzegovina, and
-              Kosovo.
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2009</span>
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
-        </div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2017</span>
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center p-4">
-              Agilrom Scientific becomes part of Altium group as distributor for Romania.
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
-        </div>
-        <div class="mt-6 sm:mt-0 sm:mb-12">
-          <div class="flex flex-row items-center gap-20">
-            <div class="flex justify-end w-full mx-auto items-center p-4 text-end">
-              DSP Chromatography, the distributor for Agilent brand in Serbia, Montenegro, and Macedonia territories,
-              joined Altium.
-            </div>
-            <div class="flex justify-start w-full mx-auto items-center">
-              <span class="text-redish text-[32px] font-extrabold">2022</span>
-            </div>
-            <div
-              class="rounded-full bg-light-300 w-3 h-3 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      <aside class="p-10 col-span-4 h-max sticky top-4">
+        <ul id="scroll-spy-items" class="space-y-6 font-semibold">
+          <!-- <li class="active">
+            General Information
+          </li>
+          <li>
+            Product Categories
+          </li>
+          <li>
+            Application Areas of Gas Chromatography
+          </li>
+          <li>
+            Advantages of Gas Chromatography
+          </li>
+          <li>
+            FAQ
+          </li> -->
+      </aside>
+    </div>
   </main>
   <footer class="container space-y-32 text-primary bg-light-200 rounded-[18px] py-[70px] px-10">
     <div class="grid grid-cols-1 2xl:grid-cols-4 px-4 max-w-md 2xl:max-w-full mx-auto 2xl:mx-0">
@@ -461,7 +543,7 @@
     </div>
     <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
   </footer>
-  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center hidden">
     <img class="select-none" src="images/hexagen.png" alt="brand" />
     <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
       <i class="fi fi-rs-arrow-small-up"></i>
