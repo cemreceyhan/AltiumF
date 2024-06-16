@@ -10,12 +10,11 @@
   <meta name="theme-color" content="#FFFFFF" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.1/simple-scrollspy.min.js"
-    integrity="sha512-NNb5TgmE+7PHedvAWwPKZ/ukCGJciTHZ23ghPriEeEfcGySDBm9zIrjaXp/WNAUcVYhi5XhJ1rHveDKR35CInw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="js/scroll-spy.js"></script>
   <script type="module" src="js/main.js"></script>
   <title>Altium</title>
 </head>
+
 
 <body class="space-y-12 relative overflow-x-hidden">
   <header class="relative bg-light-100">
@@ -357,30 +356,25 @@
   </header>
   <main class="pb-6 px-4 divide-y divide-tertiary">
     <div class="container grid grid-cols-12">
-      <section id="general-information" class="col-span-8 border-r border-tertiary">
-        <article class="max-w-[85%] space-y-4 pb-10">
-          <h1 data-scroll-spy="0">Gas Chromatography</h1>
-          <p>Gas chromatography (GC) helps scientists ensure the safety, quality, and purity of our food, air, water,
-            and
-            pharmaceuticals; determine the composition and consistency of fuels and chemicals; and test for controlled
-            substances in criminal investigations and sporting competitions.</p>
-          <br />
-          <p>Agilent gas chromatography systems combine innovative technology, Instrument Intelligence, and legendary
-            reliability to meet the needs of analytical testing and research laboratories across a broad range of
-            applications, such as environmental, food safety, forensics, energy & chemicals, and more. Integrated
-            Instrument
-            Intelligence helps avoid GC problems before they affect chromatographic performance to optimize uptime, cost
-            of
-            ownership, and confidence in results.v</p>
-        </article>
-      </section>
-      <aside class="col-span-4 px-11">
-        <img src="images/blog/1.jpeg" alt="Altium Tech Support"
-          class="w-full object-cover rounded-[18px] overflow-hidden" />
-      </aside>
-    </div>
-    <div class="container grid grid-cols-12">
-      <section id="scroll-spy-container" class="col-span-8 border-r border-tertiary divide-y divide-tertiary">
+      <section class="lg:col-span-8 col-span-12 lg:border-r border-tertiary divide-y divide-tertiary">
+        <div class="py-6 lg:pr-10 space-y-4">
+          <h2 class="font-extrabold" data-scroll-spy="0">Gas Chromatography</h2>
+          <article class="lg:max-w-[85%] w-full space-y-4 pb-10">
+            <p>Gas chromatography (GC) helps scientists ensure the safety, quality, and purity of our food, air, water,
+              and
+              pharmaceuticals; determine the composition and consistency of fuels and chemicals; and test for controlled
+              substances in criminal investigations and sporting competitions.</p>
+            <br />
+            <p>Agilent gas chromatography systems combine innovative technology, Instrument Intelligence, and legendary
+              reliability to meet the needs of analytical testing and research laboratories across a broad range of
+              applications, such as environmental, food safety, forensics, energy & chemicals, and more. Integrated
+              Instrument
+              Intelligence helps avoid GC problems before they affect chromatographic performance to optimize uptime,
+              cost
+              of
+              ownership, and confidence in results.v</p>
+          </article>
+        </div>
         <div class="divide-y divide-tertiary">
           <h2 data-scroll-spy="1" class="py-10">Product Categories</h2>
           <!-- HAS ONE COLUMN -->
@@ -463,38 +457,78 @@
             <li class="py-2">Forensics</li>
           </ul>
         </div>
+        <div class="py-10 pr-10 space-y-4 text-primary">
+          <h2 class="font-extrabold" data-scroll-spy="4">Frequently Asked Question</h2>
+          <!-- FREQUENTLY ASKED QUESTIONS AREA -->
+          <div class="divide-y divide-tertiary/40">
+            <div class="space-y-4 py-4">
+              <div id="faq-button" class="flex items-center justify-between cursor-pointer">
+                <button class="font-semibold text-start">Cras posuere placerat condimentum arcu quisque a. Dui odio
+                  massa
+                  quis.</button>
+                <i id="faq-chevron" class="fi fi-rs-angle-down"></i>
+              </div>
+              <p id="faq-content" class="hidden">Ullamcorper in neque fusce eget nibh dolor etiam odio. Nam elementum
+                gravida mattis
+                dictum laoreet.
+                Tristique elit ipsum eget quisque metus etiam tellus. Tristique cras amet dui consectetur a. Mi
+                suspendisse enim nunc vitae volutpat amet. Sagittis nisi sed ornare vitae nunc enim ullamcorper.
+                Habitant
+                lorem ultricies at praesent enim fermentum orci. Cras tempus netus iaculis at. </p>
+            </div>
+            <div class="space-y-4 py-4">
+              <div id="faq-button" class="flex items-center justify-between cursor-pointer">
+                <button class="font-semibold text-start">Cras posuere placerat condimentum arcu quisque a. Dui odio
+                  massa
+                  quis.</button>
+                <i id="faq-chevron" class="fi fi-rs-angle-down"></i>
+              </div>
+              <p id="faq-content" class="hidden">Ullamcorper in neque fusce eget nibh dolor etiam odio. Nam elementum
+                gravida mattis
+                dictum laoreet.
+                Tristique elit ipsum eget quisque metus etiam tellus. Tristique cras amet dui consectetur a. Mi
+                suspendisse enim nunc vitae volutpat amet. Sagittis nisi sed ornare vitae nunc enim ullamcorper.
+                Habitant
+                lorem ultricies at praesent enim fermentum orci. Cras tempus netus iaculis at. </p>
+            </div>
+            <div class="space-y-4 py-4">
+              <div id="faq-button" class="flex items-center justify-between cursor-pointer">
+                <button class="font-semibold text-start">Cras posuere placerat condimentum arcu quisque a. Dui odio
+                  massa
+                  quis.</button>
+                <i id="faq-chevron" class="fi fi-rs-angle-down"></i>
+              </div>
+              <p id="faq-content" class="hidden">Ullamcorper in neque fusce eget nibh dolor etiam odio. Nam elementum
+                gravida mattis
+                dictum laoreet.
+                Tristique elit ipsum eget quisque metus etiam tellus. Tristique cras amet dui consectetur a. Mi
+                suspendisse enim nunc vitae volutpat amet. Sagittis nisi sed ornare vitae nunc enim ullamcorper.
+                Habitant
+                lorem ultricies at praesent enim fermentum orci. Cras tempus netus iaculis at. </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <aside class="p-10 col-span-4 h-max sticky top-4">
-        <ul id="scroll-spy-items" class="space-y-6 font-semibold">
-          <!-- <li class="active">
-            General Information
-          </li>
-          <li>
-            Product Categories
-          </li>
-          <li>
-            Application Areas of Gas Chromatography
-          </li>
-          <li>
-            Advantages of Gas Chromatography
-          </li>
-          <li>
-            FAQ
-          </li> -->
+      <aside class="lg:col-span-4 col-span-12 h-max sticky top-4">
+        <div class="p-10 pb-[57px]"><img src="images/blog/1.jpeg" alt="Altium Tech Support"
+            class="w-full object-cover rounded-[18px] overflow-hidden" /></div>
+        <ul id="scroll-spy-items" class="pt-4 border-t border-tertiary font-semibold p-10">
+          <!-- SCROLL SPY ITEMS WILL BE LISTED HERE -->
+        </ul>
       </aside>
     </div>
   </main>
   <footer class="container space-y-32 text-primary bg-light-200 rounded-[18px] py-[70px] px-10">
     <div class="grid grid-cols-1 2xl:grid-cols-4 px-4 max-w-md 2xl:max-w-full mx-auto 2xl:mx-0">
       <div
-        class="flex flex-col items-center 2xl:items-start justify-center gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-start gap-9 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <a class="" href="/">
           <img src="images/logo.png" alt="Altium" />
         </a>
         <p class="">Altium International d.o.o.</p>
       </div>
       <div
-        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-start gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Who We Are</h1>
         <ul class="space-y-4">
           <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
@@ -504,7 +538,7 @@
         </ul>
       </div>
       <div
-        class="flex flex-col items-center 2xl:items-start justify-center gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
+        class="flex flex-col items-center 2xl:items-start justify-start gap-9 border-b 2xl:border-r 2xl:border-b-0 border-tertiary 2xl:w-[90%] py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Product & Services</h1>
         <ul class="space-y-4">
           <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">About Us</a></li>
@@ -513,7 +547,7 @@
           <li><a class="hover:ml-4 hover:text-redish duration-700" href="#">Careers</a></li>
         </ul>
       </div>
-      <div class="flex flex-col items-center 2xl:items-start justify-center gap-9 py-10 2xl:p-0">
+      <div class="flex flex-col items-center 2xl:items-start justify-start gap-9 py-10 2xl:p-0">
         <h1 class="text-[20px]/[130%] 2xl:text-[32px]/[130%] font-extrabold">Contact</h1>
         <a href="mailto:web.hr@altium.net">
           <span class="underline underline-offset-4">
@@ -543,7 +577,7 @@
     </div>
     <span class="flex items-center justify-center">© 2024 Altium - ALL RIGHTS RESERVED</span>
   </footer>
-  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center hidden">
+  <button id="to-up" class="fixed z-[9999] right-4 bottom-4 text-white text-center">
     <img class="select-none" src="images/hexagen.png" alt="brand" />
     <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
       <i class="fi fi-rs-arrow-small-up"></i>
@@ -552,5 +586,20 @@
   </button>
   <img class="absolute right-0 bottom-0 select-none -z-10" src="images/brand.png" alt="brand" />
 </body>
+
+<script>
+  const faqButton = document.querySelectorAll('#faq-button');
+  const faqContent = document.querySelectorAll('#faq-content');
+  const faqChevron = document.querySelectorAll('#faq-chevron');
+
+  faqButton.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      faqContent[index].classList.toggle('hidden');
+      faqChevron[index].classList.toggle('fi-rs-angle-down');
+      faqChevron[index].classList.toggle('fi-rs-angle-up');
+    });
+  });
+
+</script>
 
 </html>
