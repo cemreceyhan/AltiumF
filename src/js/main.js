@@ -1,4 +1,3 @@
-'use strict';
 import { navList } from '../data/mega-menu.json';
 
 const headerBar = document.querySelector('#header-main nav');
@@ -170,7 +169,7 @@ mobileMenuButton.addEventListener('click', () => {
 
 const createMobileMenu = (list) => {
   const ul = document.createElement('ul');
-  ul.classList.add('overflow-y-auto');
+  ul.classList.add('overflow-y-auto', 'flex-1');
   list.forEach((item) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
@@ -214,8 +213,8 @@ const createMobileMenu = (list) => {
         'hover:bg-light-200/60',
         'hover:duration-500',
       );
-      const i = document.createElement('i');
-      i.classList.add(
+      const iEl = document.createElement('i');
+      iEl.classList.add(
         'fi',
         'fi-ts-angle-small-down',
         'text-primary',
@@ -223,7 +222,7 @@ const createMobileMenu = (list) => {
         'ml-2',
         'mt-1',
       );
-      a.appendChild(i);
+      a.appendChild(iEl);
       const subUl = createMobileMenu(item.list);
       subUl.classList.add('hidden');
       a.addEventListener('click', (e) => {
