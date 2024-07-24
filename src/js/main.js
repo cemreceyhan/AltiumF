@@ -16,7 +16,11 @@ const createNavItem = (item) => {
   }
   navItem.href = item.link;
   navItem.textContent = item.title;
-  navItem.classList.add('hover:text-secondary', 'hover:cursor-pointer');
+  navItem.classList.add(
+    'hover:text-secondary',
+    'hover:cursor-pointer',
+    'text-center',
+  );
   return navItem;
 };
 
@@ -328,7 +332,7 @@ window.addEventListener('click', (event) => {
 
 // BASKET DESKTOP SECTION END
 
-// BASKET DESKTOP SECTION START
+// BASKET MOBILE SECTION START
 
 const basketMobileButton = document.getElementById('basket-mobile');
 const basketMobileModal = document.getElementById('basket-modal-mobile');
@@ -348,4 +352,4 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// BASKET DESKTOP SECTION END
+// BASKET MOBILE SECTION END

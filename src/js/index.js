@@ -108,12 +108,13 @@ const selectableContents = document.createElement('div');
 selectableContents.classList.add(
   'roundedBox',
   '!space-y-0',
-  'gap-4',
   'text-[14px]/[141%]',
   'text-primary',
   '!px-3',
   'hidden',
   '2xl:flex',
+  'divide',
+  'divide-x',
 );
 
 contentGallery.forEach((content) => {
@@ -126,6 +127,7 @@ contentGallery.forEach((content) => {
     'min-w-16',
     'focus:outline-none',
     'active:outline-none',
+    'px-3',
     selectedContent === content.id && 'active',
   );
   button.textContent = content.title;
