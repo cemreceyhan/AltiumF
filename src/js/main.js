@@ -277,6 +277,7 @@ const closeModal = (element) => {
 const welcomeModal = document.getElementById('welcome-modal');
 const welcomeModalCloseButton = welcomeModal.querySelector('#close-button');
 const modalSelectInput = welcomeModal.querySelector('select');
+const selectCountryButton = document.getElementById('select-country');
 
 const handleModalInputChange = () => {
   if (modalSelectInput.value !== 'default') {
@@ -286,6 +287,10 @@ const handleModalInputChange = () => {
 };
 
 modalSelectInput.addEventListener('change', handleModalInputChange);
+
+selectCountryButton.addEventListener('click', () => {
+  openModal(welcomeModal);
+});
 
 window.addEventListener('load', () => {
   const welcome = localStorage.getItem('welcome');
