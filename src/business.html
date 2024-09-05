@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ddZ6ii" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="js/business.js"></script>
+    <title>Altium</title>
+</head>
+
+<body>
+    <header class="relative bg-light-100">
+        <!-- HEADER -->
+        <div class="space-y-4 container min-h-56 hidden xl:block">
+            <nav id="header-bar"
+                class="flex items-center bg-tertiary rounded-b-[2.5rem] justify-end gap-6 px-4 py-6 font-medium text-primary">
+                <!-- SEARCH -->
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-4">
+                        <i class="fi fi-rs-search w-4 h-4"></i>
+                        Search
+                    </a>
+                </div>
+                <div class="h-5 w-[1px] bg-primary"></div>
+                <!-- USEFUL ROUTES -->
+                <div class="flex items-center gap-8">
+                    <a href="#">Our Partners</a>
+                    <a href="#" class="flex items-center">Blog</a>
+                    <a href="#" class="flex items-center">Human Resources</a>
+                </div>
+                <div class="h-5 w-[1px] bg-primary"></div>
+                <!-- LANGUAGES -->
+                <div class="flex items-center gap-4">
+                    <a href="#">EN</a>
+                    <div class="h-3 w-[1px] bg-primary"></div>
+                    <a href="#" class="opacity-50">HR</a>
+                </div>
+                <div class="h-5 w-[1px] bg-primary"></div>
+                <!-- SELECT COUNTRY -->
+                <div class="flex gap-2 items-center">
+                    <img src="images/widget.png" />
+                    <button id="select-country" class="flex items-center gap-2">
+                        <span>Select Country</span>
+                        <i class="fi fi-rs-angle-small-down flex items-center"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="header-main"
+                class="hidden xl:flex items-center justify-between px-4 py-6 text-primary font-medium">
+                <!-- LOGO -->
+                <a href="/">
+                    <img src="images/logo.png" alt="Altium" />
+                </a>
+                <!-- NAVIGATION -->
+                <nav class="flex items-center gap-7 py-4 mx-6">
+                </nav>
+                <button
+                    class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+                    Altium Global
+                </button>
+                <button id="basket" class="relative">
+                    <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+                    <span
+                        class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                </button>
+                <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="basket-modal">
+                    <div class="absolute top-0 right-0 flex flex-col bg-white divide-y divide-tertiary">
+                        <div class="flex items-center justify-between px-16 py-4">
+                            <h2 class="text-primary font-semibold px-4 py-6">Get a Quote</h2>
+                            <button id="close-basket"
+                                class="size-14 bg-redish flex items-center justify-center rounded-full">
+                                <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+                            </button>
+                        </div>
+                        <div class="px-16 py-4 flex gap-14 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-16 py-4 flex gap-14 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-16 py-4 flex gap-14 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-16 py-4 flex gap-14 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[20px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="pt-36 px-16 pb-14">
+                            <p class="text-[14px] text-center">Fill out the offer form by clicking the button below.
+                                </br> Our experts
+                                will
+                                contact you as soon as possible.</p>
+                            <button
+                                class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white w-full mt-4">
+                                Get a Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MEGA MENU -->
+            <div id="mega-menu" class="megaMenu hidden">
+                <div class="flex gap-10 w-full">
+                    <!-- MEGA SIDE -->
+                    <div class="flex max-w-[360px] flex-col gap-10 border-r pr-10">
+                        <ul id="mega-side" class="flex flex-col divide-y divide text-primary font-semibold">
+                            <!-- SIDE MENU ITEMS ARE BELONG HERE -->
+                        </ul>
+                        <div class="space-y-4">
+                            <p class="text-primary">Aliquet malesuada non egestas ac tortor ut consequat nisi amet. Elit
+                                vel turpis
+                                euismod pulvinar mi. Nunc, eget a nulla nunc mauris dictum. Cras id porttitor curabitur
+                                sed eu. Aliquet
+                            </p>
+                            <button class="pb-1 shrink-0 text-redish font-normal relative self-start group">
+                                Read More
+                                <i
+                                    class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                <div
+                                    class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="mega-sub" class="flex flex-1 justify-between gap-10">
+                        <!-- MEGA SUB -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE HEADER START -->
+        <div class="container flex items-center justify-between xl:hidden px-4 py-5">
+            <a href="/">
+                <img src="images/logo.png" alt="Altium" />
+            </a>
+            <div class="flex items-center gap-4">
+                <!-- BASKET BUTTON -->
+                <button id="basket-mobile" class="relative z-[99999] mt-3">
+                    <i class="fi fi-rr-clipboard-list shrink-0 text-xl"></i>
+                    <span
+                        class="absolute -top-2 -right-2 bg-redish text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                </button>
+                <!-- BURGER MENU -->
+                <button id="mobile-menu-button" class="w-12 h-12 relative z-[99999]">
+                    <div id="bar-1"
+                        class="w-6 h-[2px] bg-primary absolute top-[22px] left-1/2 transform -translate-x-1/2 duration-500">
+                    </div>
+                    <div id="bar-2"
+                        class="w-6 h-[2px] bg-primary absolute top-[27px] left-1/2 transform -translate-x-1/2 duration-500">
+                    </div>
+                    <div id="bar-3"
+                        class="w-6 h-[2px] bg-primary absolute top-[32px] left-1/2 transform -translate-x-1/2 duration-500">
+                    </div>
+                </button>
+            </div>
+            <!-- BASKET AREA MOBILE -->
+            <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="basket-modal-mobile">
+                <div class="absolute top-0 right-0 flex flex-col bg-white divide-y divide-tertiary h-full">
+                    <div class="flex items-center justify-between px-4 py-4">
+                        <h2 class="text-primary text-2xl font-semibold px-2 py-6">Get a Quote</h2>
+                        <button id="close-basket-mobile"
+                            class="size-10 bg-redish flex items-center shrink-0 justify-center rounded-full">
+                            <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+                        </button>
+                    </div>
+                    <!-- BASKET LIST -->
+                    <div class="h-full overflow-y-scroll divide-y divide-tertiary">
+                        <div class="px-6 py-4 flex gap-6 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-6 py-4 flex gap-6 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-6 py-4 flex gap-6 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="px-6 py-4 flex gap-6 items-center justify-between">
+                            <img src="images/brands/products/1.png" alt="Altium Tech Support"
+                                class="w-12 h-12 object-cover" />
+                            <div>
+                                <h4 class="font-extrabold text-[16px]">Agilent Intuvo 9000 GC</h4>
+                                <p class="text-primary/60 text-[12px]">GC Solutions</p>
+                                <button class="text-redish font-normal relative self-start group mt-3">
+                                    Go To Product
+                                    <i
+                                        class="fi fi-rs-arrow-small-right text-xl absolute right-0 top-1/2 -translate-y-1/2 mt-[2px] group-hover:opacity-100 group-hover:-right-7 opacity-0 duration-500"></i>
+                                    <div
+                                        class="absolute duration-500 h-[1px] w-full bg-redish bottom-0 left-0 group-hover:w-[calc(100%+23px)]">
+                                    </div>
+                                </button>
+                            </div>
+                            <button
+                                class="px-3 py-1 bg-white flex items-center justify-center duration-500 hover:bg-redish hover:border-redish border hover:text-white rounded-[.625rem] text-primary">
+                                <i class="fi fi-tr-trash-xmark text-xl mt-2"></i>
+                            </button>
+                        </div>
+                        <div class="pt-12 px-16 pb-14">
+                            <p class="text-[14px] text-center">Fill out the offer form by clicking the button below.
+                                </br> Our experts
+                                will
+                                contact you as soon as possible.</p>
+                            <button
+                                class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white w-full mt-4">
+                                Get a Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-mega-menu="closed" id="mobile-menu"
+                class="z-[9999] flex flex-col items-start sm:items-center p-4 justify-center fixed inset-0 right-0 w-full duration-500 min-h-screen bg-light-100 gap-8 text-white font-semibold overflow-auto translate-x-full">
+                <img src="images/logo.png" alt="Altium" />
+                <!-- MOBILE MENU ITEMS CREATED BY MAIN.JS -->
+            </div>
+        </div>
+        <!-- MOBILE HEADER END -->
+
+        <!-- WELCOME TO ALTIUM START -->
+        <div class="fixed inset-0 bg-black/70 w-full min-h-screen z-[9999999] hidden" id="welcome-modal">
+            <div
+                class="flex-col gap-6 absolute left-1/2 lg:top-20 top-5 -translate-x-1/2 flex items-center justify-center px-2 lg:px-24 py-14 rounded-[18px] bg-white w-[90%] h-[90%] lg:size-[680px]">
+                <button id="close-button"
+                    class="size-14 bg-redish flex items-center justify-center rounded-full absolute right-4 top-4">
+                    <i class="fi fi-rr-cross-small mt-1 text-white"></i>
+                </button>
+                <img src="images/logo.png" alt="Altium" />
+                <h2 class="lg:text-[32px] text-2xl font-normal text-center">Welcome to Altium</h2>
+                <p class="text-center text-balance">In order to access Altium products and services, we kindly ask you
+                    to select
+                    the country
+                    you want to receive
+                    service from.</p>
+                <select class="w-full disabled:text-light-100 selectBox" name="people" id="people">
+                    <option value="" selected>Please select your country</option>
+                    <option value="hr">Croatia</option>
+                    <option value="en">United Kingdom</option>
+                </select>
+                <div class="w-3/4 h-[1px] my-6 bg-tertiary"></div>
+                <p class="text-center">Instead, to go to the Altium Global page, where you can get information
+                    about Altium in addition to the products and services we offer in countries;</p>
+                <button
+                    class="px-5 py-[.875rem] bg-redish duration-500 hover:bg-white hover:border-redish border-redish border hover:text-primary rounded-[.625rem] text-white">
+                    Altium Global
+                </button>
+            </div>
+        </div>
+        <!-- WELCOME TO ALTIUM END -->
+    </header>
+    <main class="container pb-6 px-4">
+        <!-- WE SERVE LABS -->
+        <div
+            class="relative flex flex-col rounded-xl items-center justify-center py-16 px-10 sm:py-28 sm:px-40 text-white text-center bg-[url('images/women-optic.png')] bg-no-repeat bg-cover">
+            <div class="absolute inset-0 bg-red-500 bg-opacity-50 rounded-xl"></div>
+            <div class="flex flex-col space-y-5 sm:space-y-10 max-w-[90%] sm:max-w-[600px] relative z-10">
+                <h6>Access to Every Lab on 11 Countries</h6>
+                <h1 class="text-white font-extrabold md:text-[64px] text-[32px] ">WE SERVE LABS</h1>
+                <span>
+                    Altium companies serve Laboratories with Analyses and Methods, Instrumentation, Design &
+                    Installation, Consumables & Supplies, Service & Maintenance and Trainings.
+                </span>
+            </div>
+        </div>
+
+        <!-- LAB ACCORDION -->
+        <div class="flex flex-col sm:flex-row w-full mt-8 gap-y-4 sm:gap-x-4">
+            <div class="w-full sm:w-1/3">
+                <img src="images/women-lab.png" alt="Altium" class="w-full h-auto" />
+            </div>
+            <div class="w-full sm:w-2/3 max-w-3xl mx-auto">
+                <!-- Accordion Item 1 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="1">
+                        <span class="font-semibold">Analyses and Methods</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-1"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-1">
+                        <p>
+                            Altium provides a range of solutions for customers to optimize their laboratory analyses and
+                            methods. This includes offering innovative laboratory equipment and technology, as well as
+                            providing expert advice and guidance on the best practices and methods to achieve accurate
+                            and reliable results.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="2">
+                        <span class="font-semibold">Consumables and Supplies</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-2"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-2">
+                        <!-- Content for Consumables and Supplies -->
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="3">
+                        <span class="font-semibold">Instruments</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-3"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-3">
+                        <!-- Content for Instruments -->
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="4">
+                        <span class="font-semibold">Analyses and Methods</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-4"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-4">
+                        <!-- Content for Analyses and Methods -->
+                    </div>
+                </div>
+
+                <!-- Accordion Item 5 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="5">
+                        <span class="font-semibold">Service and Maintenance</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-5"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-5">
+                        <!-- Content for Service and Maintenance -->
+                    </div>
+                </div>
+
+                <!-- Accordion Item 6 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="6">
+                        <span class="font-semibold">Laboratory Design and Installation</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-6"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-6">
+                        <!-- Content for Laboratory Design and Installation -->
+                    </div>
+                </div>
+
+                <!-- Accordion Item 7 -->
+                <div class="border-t border-b py-4">
+                    <button class="w-full flex justify-between items-center focus:outline-none" data-id="7">
+                        <span class="font-semibold">Trainings</span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" id="icon-7"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="content-7">
+                        <!-- Content for Trainings -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- INDUSTRIES CONTENT -->
+        <div class="flex flex-col items-center max-w-2xl mx-auto mt-16 font-normal">
+            <h2 class="text-[64px]">
+                Industries
+            </h2>
+            <p class="text-primary text-[16px] text-center">
+                Altium provides laboratory solutions to industries such as pharmaceuticals, food, energy, environment,
+                medicine, healthcare, and green energy. Their solutions include testing for contaminants, research and
+                development, clinical diagnostics, and analytical methods tailored to the specific needs of each
+                industry.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 mt-16">
+            <!-- Pharma and Biopharma -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/pill.png" alt="Pharma" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Pharma and Biopharma</h3>
+                <p class="text-gray-600">
+                    In the pharma and biopharma industry, Altium provides laboratory solutions for drug discovery,
+                    development, and quality control. This includes analytical methods such as high-performance liquid
+                    chromatography (HPLC), mass spectrometry (MS), as well as cell culture and molecular biology
+                    techniques.
+                </p>
+            </div>
+
+            <!-- Food -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/weat.png" alt="Food" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Food</h3>
+                <p class="text-gray-600">
+                    In the food industry, Altium provides laboratory solutions for food safety and quality control. This
+                    includes testing for contaminants such as pesticides, heavy metals, and microbiological agents, as
+                    well as analysis of food composition, nutrition, and flavor. Altium also offers solutions for food
+                    packaging and shelf-life testing.
+                </p>
+            </div>
+
+            <!-- Energy -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/drop.png" alt="Energy" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Energy</h3>
+                <p class="text-gray-600">
+                    In the energy industry, Altium provides laboratory solutions for research and development of new
+                    energy technologies, as well as quality control of fuels and lubricants. This includes analysis of
+                    fuel properties such as octane number, cetane number, and flash point, as well as testing of
+                    lubricant viscosity, wear resistance, and oxidative stability.
+                </p>
+            </div>
+
+            <!-- Environment -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/leaf.png" alt="Environment" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Environment</h3>
+                <p class="text-gray-600">
+                    In the environmental industry, Altium provides laboratory solutions for monitoring and analysis of
+                    air, water, and soil quality. This includes testing for contaminants such as heavy metals, organic
+                    compounds, and pathogens, as well as analysis of environmental parameters such as pH, temperature,
+                    and dissolved oxygen.
+                </p>
+            </div>
+
+            <!-- Medicine and Healthcare -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/electric.png" alt="Medicine" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Medicine and Healthcare</h3>
+                <p class="text-gray-600">
+                    In the medicine and healthcare industry, Altium provides laboratory solutions for clinical
+                    diagnostics, drug development, and research. This includes analysis of biological samples such as
+                    blood, urine, and tissue, as well as techniques such as PCR, ELISA, and flow cytometry.
+                </p>
+            </div>
+
+            <!-- Green Energy -->
+            <div class="flex flex-col">
+                <div class="flex items-center mb-4">
+                    <img src="images/green-energy.png" alt="Green Energy" class="mr-4" />
+                </div>
+                <div class="border-t border-gray-300 mb-4"></div>
+                <h3 class="font-semibold text-lg mb-2">Green Energy</h3>
+                <p class="text-gray-600">
+                    In the green energy industry, Altium provides laboratory solutions for research and development of
+                    renewable energy technologies. This includes analysis of materials such as solar cells, batteries,
+                    and fuel cells, as well as testing of energy storage and conversion systems.
+                </p>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
